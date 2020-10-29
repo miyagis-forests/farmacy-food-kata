@@ -6,7 +6,13 @@ Farmacy Food is a start-up with limited resources to configure, deploy, and gove
 solutions, such as a full-fledged API gateway product.   
 
 ## Decision 
-We will use the BFF pattern and have BFF services as the central point of interaction with the Farmacy Food frontend apps. 
+We will use the BFF pattern and have BFF services for each type of frontend as the central point of interaction with 
+the Farmacy Food frontend apps.
+Moreover, instead of a single BFF service (for each frontend type) that interacts with *all* backend services, we will
+create separate BFF services per subdomain: 
+- **BFF for User** and account management (one version for each frontend type)
+- **BFF for Catalog** and browsing services available (one version for each frontend type)
+- **BFF for Order**, including checkout and order processing (one version for each frontend type) 
 
 ## Rationale 
 - The [BFF pattern](https://samnewman.io/patterns/architectural/bff/) prescribes a different BFF edge service that handles 

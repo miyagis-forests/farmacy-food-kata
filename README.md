@@ -3,7 +3,7 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 # Farmacy Food system
 
 ### Requirements
-- Functional requirements
+- [Functional requirements](farmacy-food-requirements.md)
 - Quality attribute requirements
 
 ### Architecture

@@ -8,6 +8,8 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 
 ### Architecture
 - [Customer Account - microservice view](architecture/user-account-mgmt-runtime-view.md)
+- [Catalog - microservice view](architecture/catalog-runtime-view.md)
+- Order - microservice and EDA view
 - Customer at pick-up location - runtime view
 - Replenisher - runtime view
 
@@ -16,6 +18,10 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 - [BFF pattern](ADRs/ADR002-bff-pattern.md)
 - [Wrapper pattern](ADRs/ADR003-wrapper-pattern.md)
 - [CQRS pattern](ADRs/ADR004-cqrs-pattern.md)
+
+***Note***: *we used [this ADR template](https://github.com/pmerson/ADR-template/blob/master/ADR-template.md). It is slightly 
+different from the template presented by Neal during the first Kata session. 
+The justification is in the [template repo README file](https://github.com/pmerson/ADR-template/blob/master/README.md#why-this-template).*
 
 ### Backlog
 Pending design activities for a future sprint. :^)

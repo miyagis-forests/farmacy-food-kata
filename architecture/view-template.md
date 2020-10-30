@@ -7,11 +7,11 @@ Short description of the scope and nature of this architecture view.
 (There's no need to list *all* elements in the diagram, just the ones who require further information. Give the 
  information in a bulleted list for improved readability.)
 
-##### Element X
+#### Element X
 - info
 - info
 
-##### Element Y
+#### Element Y
 - info
 - info
 

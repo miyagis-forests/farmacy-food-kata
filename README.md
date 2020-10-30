@@ -3,7 +3,7 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 # Farmacy Food system
 
 ### Requirements
-- [Functional requirements](farmacy-food-requirements.md)
+- [Functional requirements](requirements/farmacy-food-requirements.md)
 - Quality attribute requirements
 
 ### Architecture
@@ -12,10 +12,10 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 - Replenisher - runtime view
 
 ### ADRs
-- [Payment gateway](ADR001-payment-gateway.md)
-- [BFF pattern](ADR002-bff-pattern.md)
-- [Wrapper pattern](ADR003-wrapper-pattern.md)
-- [CQRS pattern](ADR004-cqrs-pattern.md)
+- [Payment gateway](ADRs/ADR001-payment-gateway.md)
+- [BFF pattern](ADRs/ADR002-bff-pattern.md)
+- [Wrapper pattern](ADRs/ADR003-wrapper-pattern.md)
+- [CQRS pattern](ADRs/ADR004-cqrs-pattern.md)
 
 ### Backlog
 Pending design activities for a future sprint. :^)

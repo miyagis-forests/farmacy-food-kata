@@ -32,8 +32,8 @@ used for retrieving plotted maps with pick-up locations.
 - N/A.
  
 ## Related ADRs 
-- TO-DO: Link to Wrapper ADR
-- TO-DO: link to BFF ADR
+- [Wrapper pattern](../ADRs/ADR003-wrapper-pattern.md)
+- [BFF pattern](../ADRs/ADR002-bff-pattern.md)
 
 ## Related Views
 - [Customer Account - microservice view](user-account-mgmt-runtime-view.md)

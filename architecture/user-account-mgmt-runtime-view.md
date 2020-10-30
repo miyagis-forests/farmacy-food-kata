@@ -45,7 +45,8 @@ Facebook account.
 - N/A.
  
 ## Related ADRs 
-- TO-DO: link to BFF ADR
+- [BFF pattern](../ADRs/ADR002-bff-pattern.md)
+- [CQRS pattern](../ADRs/ADR004-cqrs-pattern.md)
 
 ## Related Views
 - TO-DO: link to catalog view 

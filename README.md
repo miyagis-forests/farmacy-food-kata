@@ -9,7 +9,7 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 ### Architecture
 - [Customer Account - microservice view](architecture/user-account-mgmt-runtime-view.md)
 - [Catalog - microservice view](architecture/catalog-runtime-view.md)
-- Order - microservice and EDA view
+- [Order - microservice and EDA view](architecture/order-runtime-view.md)
 - Customer at pick-up location - runtime view
 - Replenisher - runtime view
 

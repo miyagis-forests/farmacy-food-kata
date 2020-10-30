@@ -3,8 +3,8 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 # Farmacy Food system
 
 ### Requirements
-- [Functional requirements](requirements/farmacy-food-requirements.md)
-- Quality attribute requirements
+- [Functional requirements](requirements/functional-rqmts.md)
+- [Quality attribute requirements](requirements/quality-attribute-rqmts.md)
 
 ### Architecture
 - [Customer Account - microservice view](architecture/user-account-mgmt-runtime-view.md)
@@ -19,6 +19,7 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 
 ### Backlog
 Pending design activities for a future sprint. :^)
+- Better record the quality attribute requirements (aka non-functional requirements). Requires talking to Kwaku and other Farmacy Food stakeholders.  
 - Create a deployment architecture view to describe design aspects, such as:
     - cloud deployment choices, for example: use Amazon EKS
     - containerization (e.g., pod placement, K8S cluster definition)

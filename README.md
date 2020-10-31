@@ -10,7 +10,7 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 - [Customer Account - microservice view](architecture/user-account-mgmt-runtime-view.md)
 - [Catalog - microservice view](architecture/catalog-runtime-view.md)
 - [Order - microservice and EDA view](architecture/order-runtime-view.md)
-- Customer at pick-up location - runtime view
+- [Customer at pick-up location - microservice and EDA view](architecture/customer-pickup-microservice-view.md)
 - Replenisher - runtime view
 
 ### ADRs
@@ -22,6 +22,8 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 ***Note***: *we used [this ADR template](https://github.com/pmerson/ADR-template/blob/master/ADR-template.md). It is slightly 
 different from the template presented by Neal during the first Kata session. 
 The justification is in the [template repo README file](https://github.com/pmerson/ADR-template/blob/master/README.md#why-this-template).*
+
+--------------------------
 
 ### Backlog
 Pending design activities for a future sprint. :^)

@@ -27,7 +27,8 @@ The justification is in the [template repo README file](https://github.com/pmers
 
 ### Backlog
 Pending design activities for a future sprint. :^)
-- Better record the quality attribute requirements (aka non-functional requirements). Requires talking to Kwaku and other Farmacy Food stakeholders.  
+- Better record the quality attribute requirements (aka non-functional requirements). Requires talking to Kwaku and 
+other Farmacy Food stakeholders.  
 - Create a deployment architecture view to describe design aspects, such as:
     - cloud deployment choices, for example: use Amazon EKS
     - containerization (e.g., pod placement, K8S cluster definition)
@@ -41,6 +42,7 @@ Pending design activities for a future sprint. :^)
 - Write ADR for use of CQRS pattern
 - Write ADR for using a microservice architecture style
 - Write ADR for using an event-driven architecture for order processing.
+- Add the description of components that are missing in the element catalogs of the architecture views.    
 
 --------------------------
 

@@ -33,7 +33,9 @@ This is a microservice architecture. Key patterns used:
 - Pool smart fridges to get status of failures or maintenance
 
 ## Behavior
-- N/A.
+- State machine of fridges
+
+![State machine of fridges](../images/state-machine-on-fridges.png?raw=true)
  
 ## Related ADRs 
 - [BFF pattern](../ADRs/ADR002-bff-pattern.md)

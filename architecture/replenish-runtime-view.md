@@ -29,6 +29,9 @@ This is a microservice architecture. Key patterns used:
 - Change status of vendor location: open, closed temporarily, business closed
 - Working with vendor system, by a wrapper, to update stock information (placing or removing meals)
 
+#### Monitor Fridges
+- Pool smart fridges to get status of failures or maintenance
+
 ## Behavior
 - N/A.
  

@@ -1,5 +1,6 @@
-# Replenish Microservice View 
-The scope is the operations that the replenisher can perform related to replenishing the fridges and vendor kiosk stocks, which includes commission of fridges and all operations involving the fridge’s and vendor’s stocks. 
+# Replenisher Microservice View 
+The scope is the operations that the Farmacy Food replenisher can perform related to inspecting the stock and replenishing 
+the fridges and vendor kiosks. The scope also includes updating in the status of fridges vendor stores. 
 
 This is a microservice architecture. Key patterns used:
 - BFF
@@ -11,34 +12,39 @@ This is a microservice architecture. Key patterns used:
 ## Element Catalog 
 
 #### Farmacy Food Android app
-- Mobile application created using native language for Android, such Kotlin or Java.
-- Application that replenisher use for replenishing stocks on fridges and vendor kiosks.  
+- Mobile application created using native language for Android, such as Kotlin or Java.
+- It's the application the replenisher uses to enter stock updates into the system, both for fridges and vendor kiosks.  
 
 #### Replenish BFF for Android
-- Central access point for calls coming from the Android app.
-- Produce inventory events for Kafka topic for placing or removing meals, and update the stock information
+- Central access point for calls coming from the Replenisher's Android app.
+- Produces inventory events to a Kafka topic for placing or removing meals, and updating stock information.
 
 #### Inventory Command
-- Listener to inventory events produced by a replenisher in order to update data in inventory  for vendor kiosks and fridges replenishment. 
+- Listener to inventory events produced by a replenisher. It updates stock information in the master inventory DB for vendor kiosks and fridges. 
 
 #### Fridge control
-- Change status of fridges: installed but turned off, operative but offline, operative and online, temporarily out of order, in maintenance by supplier, decommissioned
-- Working with third part smart fridges systems, by a wrapper, to update stock information (placing or removing meals)
+- Updates the status of smart fridges (see state machine diagram below) based on different events. 
+    - Events coming from the replenisher app indicate meals added/removed from a fridge, and possibly some status information (say, 
+    the replenisher found a technical problem to reort).
+    - Events coming from calling (in a loop) the smart fridge cloud-based system to query the status of fridges.  
+- When processing events from the replenisher app, Fridge control will call the third party smart fridge system 
+(via a wrapper service) to update stock information based on meals added or removed by the replenisher. 
 
 #### Vendor kiosk control
 - Change status of vendor location: open, closed temporarily, business closed
 - Working with vendor system, by a wrapper, to update stock information (placing or removing meals)
 
 #### Monitor Fridges
-- Pool smart fridges to get status of failures or maintenance
+- Batch program that in a loop calls the cloud-based smart fridge management system to get the status of the Farmacy
+Food fridges. 
+- It makes the calls via a wrapper service. 
 
 ## Behavior
-- State machine of fridges
+- UML state machine diagram showing the status of a fridge (from a Farmacy Food system perspective).
 
 ![State machine of fridges](../images/state-machine-on-fridges.png?raw=true)
  
 ## Related ADRs 
-- [BFF pattern](../ADRs/ADR002-bff-pattern.md)
 - [Wrapper pattern](../ADRs/ADR003-wrapper-pattern.md)
 - [CQRS pattern](../ADRs/ADR004-cqrs-pattern.md)
 

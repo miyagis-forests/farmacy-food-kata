@@ -12,32 +12,24 @@ This is a microservice architecture. Key patterns used:
 
 ## Element Catalog 
 
-#### Customer
-- x
+#### Customer, Smart Fridge, POS Cashier
+- The actual customer (in person), Smart Fridge and POS Cashier.
 
-#### Smart Fridge
-- x
-
-#### POS Cashier
-- x
-
-#### Smart fridge management system (?)
-- x
-
-#### Vendor management system (?)
-- x
-
-#### Wrappers (?)
-- x
+#### Smart fridge management system, Vendor management system
+- Systems that provide APIs for querying and managing the state of the smart fridges
+and vendor management systems.
+- Proprietary technology, managed by third-parties.
 
 #### Pick-up transaction updater
-- x
+- A batch program that queries the Smart Fridge and Vendor management systems for updates and
+posts them on the Inventory and Order topics for later handling by the `Inventory command` and
+`Order processing` services.
 
 #### Inventory Command (?)
-- x
+- Service that handles commands updating the inventory.
 
 #### Order processing (?)
-- x
+- Component responsible for processing events about orders.
 
 
 ## Behavior
@@ -45,7 +37,7 @@ This is a microservice architecture. Key patterns used:
  
 ## Related ADRs 
 - [CQRS pattern](../ADRs/ADR004-cqrs-pattern.md)
-- what else?
+- [Wrapper pattern](../ADRs/ADR003-wrapper-pattern.md)
 
 ## Related Views
-- TO-DO: link to order view 
+- [Order - microservice and EDA view](../architecture/order-runtime-view.md) 

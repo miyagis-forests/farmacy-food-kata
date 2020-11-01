@@ -34,7 +34,11 @@ processing an order. Key patterns used:
 
 
 ## Behavior
-- TO-DO: sequence diagram for placing an order to pick-up in a smart fridge
+* The diagram below shows the sequence of messages for closing an online order that is successful for a meal order to
+be picked up at a smart fridge location. 
+* The diagram uses the UML Sequence Diagram notation, except that we used our component symbols up on top instead of
+UML objects.   
+![Order Sequence Diagram](../images/order-runtime-view-sd.png?raw=true)
 
  
 ## Related ADRs 

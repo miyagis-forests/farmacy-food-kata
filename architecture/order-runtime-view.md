@@ -29,8 +29,12 @@ processing an order. Key patterns used:
 #### Payflow by PayPal
 - TO-DO
 
-#### Customer notification
-- TO-DO
+#### Order command
+- Has basic operations for creating or modifying an order.
+- It's invoked:
+    - by *Order processing* when a meal order is placed.  
+    - by *Order BFF* when the customer updates or cancels an order.   
+- It uses the CQRS pattern. 
 
 
 ## Behavior

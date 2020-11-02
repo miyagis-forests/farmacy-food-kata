@@ -4,15 +4,16 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 
 ### Requirements
 
-This section brings the elicited requirements that served as foundation to the decisions in this proposal. 
+This section brings the requirements (some from the [provided document](https://docs.google.com/document/d/1SML3n4JbpZV2PSLRpjaCvBvyUMVsFwlqAQF3VKd_oPU/edit#), 
+some from assumptions we made) that served as drivers for the design decisions in this proposal. 
 
 - [Functional requirements](requirements/functional-rqmts.md)
 - [Quality attribute requirements](requirements/quality-attribute-rqmts.md)
 
 ### Architecture
 
-The architectural views below present the services designed to support Farmacy Food's requirements. They are divided
-in five specific views which intend to best group them according to their functionality and interactions.
+The architecture views below present the services designed to address Farmacy Food's requirements. They are divided
+into five views, which correspond to the main capabilities or subdomains in scope for our Farmacy Food system. 
  
 - [Customer Account Management - microservice view](architecture/user-account-mgmt-microservice-view.md)
 - [Catalog - microservice view](architecture/catalog-microservice-view.md)
@@ -22,7 +23,7 @@ in five specific views which intend to best group them according to their functi
 
 ### ADRs
 
-The recording of the architectural decisions regarding the proposed design, including their context and rationale.
+The linked ADRs recording the main architecture decisions regarding the proposed design, including their context and rationale.
 
 - ADR 001 - [Payment gateway](ADRs/ADR001-payment-gateway.md)
 - ADR 002 - [BFF pattern](ADRs/ADR002-bff-pattern.md)

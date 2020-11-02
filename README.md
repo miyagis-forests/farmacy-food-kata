@@ -24,10 +24,10 @@ in five specific views which intend to best group them according to their functi
 
 The recording of the architectural decisions regarding the proposed design, including their context and rationale.
 
-- [Payment gateway](ADRs/ADR001-payment-gateway.md)
-- [BFF pattern](ADRs/ADR002-bff-pattern.md)
-- [Wrapper pattern](ADRs/ADR003-wrapper-pattern.md)
-- [CQRS pattern](ADRs/ADR004-cqrs-pattern.md)
+- ADR 001 - [Payment gateway](ADRs/ADR001-payment-gateway.md)
+- ADR 002 - [BFF pattern](ADRs/ADR002-bff-pattern.md)
+- ADR 003 - [Wrapper pattern](ADRs/ADR003-wrapper-pattern.md)
+- ADR 004 - [CQRS pattern](ADRs/ADR004-cqrs-pattern.md)
 
 <sub>***Note***: *we used [this ADR template](https://github.com/pmerson/ADR-template/blob/master/ADR-template.md). It is slightly 
 different from the template presented by Neal during the first Kata session. 

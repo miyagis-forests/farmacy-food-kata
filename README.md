@@ -49,7 +49,6 @@ other Farmacy Food stakeholders.
     - how is code to be structured in layers (hexagonal aka ports and adapter would be a good option…)
     - entities and VOs that form aggregates (or equivalent if not using DDD modeling)
     - domain events and event hierarchies  
-- Write ADR for use of CQRS pattern
 - Write ADR for using a microservice architecture style
 - Write ADR for using an event-driven architecture for order processing.
 - Add the description of components that are missing in the element catalogs of the architecture views.    

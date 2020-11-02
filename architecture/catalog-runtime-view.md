@@ -12,7 +12,7 @@ This is a microservice architecture. Key patterns used:
 
 ## Element Catalog 
 
-#### Location finder
+#### Pick-up location finder
 - Has endpoints to list and search for pick-up locations near a given address or in a given region (city, state).
 - The database of pick-up locations is updated by another component (not shown in the diagram). (Being honest, in a 
 start up setting, it might as well be that for a while there won't be any UI for updating locations and this kind of 

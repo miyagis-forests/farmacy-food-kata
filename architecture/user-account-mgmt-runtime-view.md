@@ -18,8 +18,8 @@ This is a microservice architecture. Key patterns used:
 - Central access point for calls coming from the frontend apps.
 - These are the 3 types of frontend we added BFFs for in the design. However, other types of frontends/clients like the
 ones listed below can be added by specifying new BFFs for them:
-    - a chatbot client that interacts via SMS, Tweeter, WhatsApp. 
-    - a public API client to get calls from other websites.
+    - A chatbot client that interacts via SMS, Tweeter, WhatsApp. 
+    - A public API client to get calls from other websites.
     - Amazon seller API, so Farmacy Food meals can be sold on Amazon.
 
 #### Auth
@@ -32,13 +32,13 @@ Facebook account.
 
 #### eDietician
 - "Expert system" that will provide personalized meal recommendations based on different criteria:
-    - customer's dietary restrictions and health information
-    - customer's purchase history
-    - meal ratings
-- internal design alternatives:
-    - use a traditional rules engine (BRMS) 
-    - use machine learning techniques to build a meal recommendation model
-    - use an external service that offers this functionality on the Web 
+    - customer's dietary restrictions and health information,
+    - customer's purchase history, and/or
+    - meal ratings.
+- Internal design alternatives:
+    - use a traditional rules engine (BRMS),
+    - use machine learning techniques to build a meal recommendation model, or
+    - use an external service that offers this functionality on the Web.
 
 
 ## Behavior

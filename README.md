@@ -12,7 +12,7 @@ This section brings the elicited requirements that served as foundation to the d
 ### Architecture
 
 The architectural views below present the services designed to support Farmacy Food's requirements. They are divided
-in five specific views which intend to best group then according to their functionality and interactions.
+in five specific views which intend to best group them according to their functionality and interactions.
  
 - [Customer Account - microservice view](architecture/user-account-mgmt-runtime-view.md)
 - [Catalog - microservice view](architecture/catalog-runtime-view.md)

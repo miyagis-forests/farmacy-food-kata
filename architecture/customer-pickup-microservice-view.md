@@ -16,7 +16,7 @@ This is a microservice architecture. Key patterns used:
 ## Element Catalog 
 
 #### Customer, Smart Fridge, Cashier POS
-- The actual customer (in person), Smart Fridge and ashier POS.
+- The actual customer (in person), Smart Fridge and cashier POS.
 
 #### Smart fridge management system, Vendor management system
 - Systems that provide APIs for querying and managing the state of the smart fridges
@@ -29,15 +29,15 @@ and vendor management systems.
  the specifics of each third-party system.
 
 #### Pick-up transaction updater
-- A batch program that queries the Smart Fridge and Vendor management systems for updates and
-posts them on the Inventory and Order topics for later handling by the `Inventory command` and
+- A batch program that queries the Smart Fridge and Vendor management systems for updates. Changes are
+posted to the Inventory and Order topics for later handling by the `Inventory command` and
 `Order processing` services.
 
 #### Inventory Command
-- Reactive service (topic susbscriber) that handles commands updating the inventory.
+- Reactive service (topic subscriber) that handles commands updating the inventory.
 
 #### Order processing 
-- Reactive service (topic susbscriber) responsible for processing events about orders.
+- Reactive service (topic subscriber) responsible for processing events about orders.
 
 
 ## Behavior

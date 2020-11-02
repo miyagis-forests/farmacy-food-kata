@@ -7,7 +7,7 @@ This is a microservice architecture. Key patterns used:
 - Database per Microservice (aka Database per Service)
 - CQRS 
 
-![Customer account management runtime view](../images/user-account-mgmt-runtime-view-primary.png)
+![Customer account management runtime view](../images/user-account-mgmt-microservice-view-primary.png)
 
 ## Element Catalog 
 
@@ -49,5 +49,5 @@ Facebook account.
 - [CQRS pattern](../ADRs/ADR004-cqrs-pattern.md)
 
 ## Related Views
-- [Catalog - microservice view](catalog-runtime-view.md)
-- [Order - microservice and EDA view](order-runtime-view.md)
+- [Catalog - microservice view](catalog-microservice-view.md)
+- [Order - microservice and EDA view](order-microservice-eda-view.md)

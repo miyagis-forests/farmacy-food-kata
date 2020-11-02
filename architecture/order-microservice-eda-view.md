@@ -11,8 +11,8 @@ processing an order. Key patterns used:
 - CQRS
 - Publish-subscribe (in the event-driven architecture) 
 
-![Order runtime view](../images/order-runtime-view-primary.png)
-![Notation key](../images/notation-key-runtime-views.png)
+![Order runtime view](../images/order-microservice-eda-view-primary.png)
+![Notation key](../images/notation-key-microservice-views.png)
 
 
 ## Element Catalog 
@@ -58,7 +58,7 @@ payment status.
 #### Reviews
 - Has endpoints to allow the customer to rate meals, add reviews, or give non-public feedback for verified purchases
 - Has also endpoints for querying and searching reviews and ratings. These endpoints are used when looking at a meal item 
-from the [catalog](catalog-runtime-view.md).  
+from the [catalog](catalog-microservice-view.md).  
 
 
 ## Behavior
@@ -66,7 +66,7 @@ from the [catalog](catalog-runtime-view.md).
 be picked up at a smart fridge location. 
 * The diagram uses the UML Sequence Diagram notation, except that we used our component symbols up on top instead of
 UML objects.   
-![Order Sequence Diagram](../images/order-runtime-view-sd.png)
+![Order Sequence Diagram](../images/order-microservice-eda-view-sd.png)
 
  
 ## Related ADRs 
@@ -76,5 +76,5 @@ UML objects.
 - [BFF pattern](../ADRs/ADR002-bff-pattern.md)
 
 ## Related Views
-- [Customer Account Management - microservice view](user-account-mgmt-runtime-view.md)
-- [Catalog - microservice view](catalog-runtime-view.md)
+- [Customer Account Management - microservice view](user-account-mgmt-microservice-view.md)
+- [Catalog - microservice view](catalog-microservice-view.md)

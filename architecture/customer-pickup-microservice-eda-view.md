@@ -48,4 +48,4 @@ posted to the Inventory and Order topics for later handling by the `Inventory co
 - [Wrapper pattern](../ADRs/ADR003-wrapper-pattern.md)
 
 ## Related Views
-- [Order - microservice and EDA view](../architecture/order-runtime-view.md) 
+- [Order - microservice and EDA view](order-microservice-eda-view.md) 

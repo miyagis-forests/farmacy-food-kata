@@ -7,7 +7,7 @@ This is a microservice architecture. Key patterns used:
 - Database per Microservice (aka Database per Service)
 - CQRS 
 
-![Replenisher microservice and eda view](../images/replenish-runtime-view-primary.png)
+![Replenisher microservice and eda view](../images/replenish-microservice-eda-view-primary.png)
 
 ## Element Catalog 
 
@@ -42,11 +42,11 @@ Food fridges.
 ## Behavior
 - UML state machine diagram showing the status of a fridge (from a Farmacy Food system perspective).
 
-![State machine of fridges](../images/state-machine-on-fridges.png)
+![State machine of fridges](../images/replenish-microservices-eda-state-machine.png)
  
 ## Related ADRs 
 - [Wrapper pattern](../ADRs/ADR003-wrapper-pattern.md)
 - [CQRS pattern](../ADRs/ADR004-cqrs-pattern.md)
 
 ## Related Views
-- [Order - microservice and EDA view](../architecture/order-runtime-view.md) 
+- [Order - microservice and EDA view](order-microservice-eda-view.md) 

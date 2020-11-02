@@ -14,11 +14,11 @@ This section brings the elicited requirements that served as foundation to the d
 The architectural views below present the services designed to support Farmacy Food's requirements. They are divided
 in five specific views which intend to best group them according to their functionality and interactions.
  
-- [Customer Account Management - microservice view](architecture/user-account-mgmt-runtime-view.md)
-- [Catalog - microservice view](architecture/catalog-runtime-view.md)
-- [Order - microservice and EDA view](architecture/order-runtime-view.md)
-- [Customer at pick-up location - microservice and EDA view](architecture/customer-pickup-microservice-view.md)
-- [Replenisher - microservice and EDA view](architecture/replenish-runtime-view.md) 
+- [Customer Account Management - microservice view](architecture/user-account-mgmt-microservice-view.md)
+- [Catalog - microservice view](architecture/catalog-microservice-view.md)
+- [Order - microservice and EDA view](architecture/order-microservice-eda-view.md)
+- [Customer at pick-up location - microservice and EDA view](architecture/customer-pickup-microservice-eda-view.md)
+- [Replenisher - microservice and EDA view](architecture/replenish-microservice-eda-view.md) 
 
 ### ADRs
 

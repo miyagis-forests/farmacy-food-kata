@@ -24,6 +24,11 @@ This is a microservice architecture. Key patterns used:
 #### Inventory Command
 - Listener to inventory events produced by a replenisher. It updates stock information in the master inventory DB for vendor kiosks and fridges. 
 
+#### Inventory data sync
+- Batch program that in a loop reads data from Inventory, Kiosks and Fridges sources in order to synchronize data to Inventory query view. 
+It’s important to note that customers (users) need to know what items are available and what points of sale (kiosks and smart fridges)
+are operational for purchase and pick up.        
+
 #### Fridge control
 - Updates the status of smart fridges (see state machine diagram below) based on different events. 
     - Events coming from the replenisher app indicate meals added/removed from a fridge, and possibly some status information (say, 
@@ -39,6 +44,10 @@ This is a microservice architecture. Key patterns used:
 #### Monitor Fridges
 - Batch program that in a loop calls the cloud-based smart fridge management system to get the status of the Farmacy
 Food fridges. 
+- It makes the calls via a wrapper service. 
+
+#### Monitor Kiosks
+- Batch program that in a loop calls the cloud-based vendor kiosk management system to get the status of the vendor kiosks points of sale. 
 - It makes the calls via a wrapper service. 
 
 ## Behavior

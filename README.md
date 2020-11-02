@@ -3,10 +3,17 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 # Farmacy Food system
 
 ### Requirements
+
+This section brings the elicited requirements that served as foundation to the decisions in this proposal. 
+
 - [Functional requirements](requirements/functional-rqmts.md)
 - [Quality attribute requirements](requirements/quality-attribute-rqmts.md)
 
 ### Architecture
+
+The architectural views below present the services designed to support Farmacy Food's requirements. They are divided
+in five specific views which intend to best group then according to their functionality and interactions.
+ 
 - [Customer Account - microservice view](architecture/user-account-mgmt-runtime-view.md)
 - [Catalog - microservice view](architecture/catalog-runtime-view.md)
 - [Order - microservice and EDA view](architecture/order-runtime-view.md)
@@ -14,19 +21,22 @@ This is the github repo for the solution created by team Miyagi's Little Forests
 - [Replenisher - runtime view](architecture/replenish-runtime-view.md) 
 
 ### ADRs
+
+The recording of the architectural decisions regarding the proposed design, including their context and rationale.
+
 - [Payment gateway](ADRs/ADR001-payment-gateway.md)
 - [BFF pattern](ADRs/ADR002-bff-pattern.md)
 - [Wrapper pattern](ADRs/ADR003-wrapper-pattern.md)
 - [CQRS pattern](ADRs/ADR004-cqrs-pattern.md)
 
-***Note***: *we used [this ADR template](https://github.com/pmerson/ADR-template/blob/master/ADR-template.md). It is slightly 
+<sub>***Note***: *we used [this ADR template](https://github.com/pmerson/ADR-template/blob/master/ADR-template.md). It is slightly 
 different from the template presented by Neal during the first Kata session. 
-The justification is in the [template repo README file](https://github.com/pmerson/ADR-template/blob/master/README.md#why-this-template).*
+The justification is in the [template repo README file](https://github.com/pmerson/ADR-template/blob/master/README.md#why-this-template).*</sub>
 
 --------------------------
 
 ### Backlog
-Pending design activities for a future sprint. :^)
+Pending design activities for a hypothetical future sprint. :^)
 - Better record the quality attribute requirements (aka non-functional requirements). Requires talking to Kwaku and 
 other Farmacy Food stakeholders.  
 - Create a deployment architecture view to describe design aspects, such as:
@@ -36,7 +46,7 @@ other Farmacy Food stakeholders.
     - log consolidation
     - monitoring and tracing
 - Create architecture views to show the structure of the implementation units. Examples of information in such views:
-    - how is code to be structured in layers (hexagonal aka ports and adapter would be a good option...)
+    - how is code to be structured in layers (hexagonal aka ports and adapter would be a good option…)
     - entities and VOs that form aggregates (or equivalent if not using DDD modeling)
     - domain events and event hierarchies  
 - Write ADR for use of CQRS pattern

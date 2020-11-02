@@ -18,16 +18,35 @@ processing an order. Key patterns used:
 ## Element Catalog 
 
 #### Checkout
-- TO-DO
+- Handles the requests from the frontend apps relative to the different steps the customer goes through when they
+click checkout. 
+- It allows the user to apply a coupon, in which case the service interacts with the `Promotions` service to validate the
+coupon and recalculate the cost based on the discount. 
+- When processing the final submit for the meal order, `Checkout` calls `Inventory query` for validating the order against 
+  meal availability in the selected pick-up location (if one was chosen). If everything is OK, a domain event "Purchase Order Created" 
+  is published. 
+- The purchase order is processed asynchronouly, as described in the [sequence diagram](#behavior) further down. 
 
 #### Payment
-- TO-DO
+- Will process the payment for a submitted purchase order. 
+- Uses a third-party payment gateway. To avoid coupling the logic to one specific payment gateway provider, the interaction
+is through a wrapper service. 
+- If the payment is sucessful, `Payment` publishes a Order Payment Confirmed event containing all order details and
+payment status.  
 
-#### Payment wrapper
-- TO-DO
+#### Payflow wrapper
+- Payflow is the payment gateway service for PayPal. We used it as a (likely) example of payment gateway. 
 
 #### Payflow by PayPal
-- TO-DO
+- External payment gateway service that offers a public API to merchant partners. 
+
+#### Customer notification
+- Reponsible for sending out notifications to the customers via one or more mechanisms: 
+    - email
+    - app push notification
+    - SMS  
+    - WhatsApp
+- It subscribes to various events and puts together the corresponding personalized messages according to pre-defined templates.  
 
 #### Order command
 - Has basic operations for creating or modifying an order.
@@ -35,6 +54,11 @@ processing an order. Key patterns used:
     - by *Order processing* when a meal order is placed.  
     - by *Order BFF* when the customer updates or cancels an order.   
 - It uses the CQRS pattern. 
+
+#### Reviews
+- Has endpoints to allow the customer to rate meals, add reviews, or give non-public feedback for verified purchases
+- Has also endpoints for querying and searching reviews and ratings. These endpoints are used when looking at a meal item 
+from the [catalog](catalog-runtime-view.md).  
 
 
 ## Behavior
@@ -52,5 +76,5 @@ UML objects.
 - [BFF pattern](../ADRs/ADR002-bff-pattern.md)
 
 ## Related Views
-- TO-DO: link to catalog view 
-- TO-DO: link to order view 
+- [Customer Account - microservice view](user-account-mgmt-runtime-view.md)
+- [Catalog - microservice view](catalog-runtime-view.md)

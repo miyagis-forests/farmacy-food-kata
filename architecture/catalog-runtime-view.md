@@ -37,4 +37,5 @@ used for retrieving plotted maps with pick-up locations.
 
 ## Related Views
 - [Customer Account - microservice view](user-account-mgmt-runtime-view.md)
-- TO-DO: link to order view 
+- [Order - microservice and EDA view](order-runtime-view.md)
+ 

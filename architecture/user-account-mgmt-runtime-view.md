@@ -1,4 +1,4 @@
-# User Account Management Microservice View 
+# Customer Account Management Microservice View 
 The scope is the operations that the customer can perform related to creating and managing an account and user profile,
 which includes signing in using a Farmacy Food user ID and password or different credentials (Google, Facebook, etc.). 
 
@@ -7,12 +7,12 @@ This is a microservice architecture. Key patterns used:
 - Database per Microservice (aka Database per Service)
 - CQRS 
 
-![User account management runtime view](../images/user-account-mgmt-runtime-view-primary.png?raw=true)
+![Customer account management runtime view](../images/user-account-mgmt-runtime-view-primary.png)
 
 ## Element Catalog 
 
 #### Farmacy Food web app
-- Web application created using a SPA JS framework, such as Vue, React, or Ember.
+- Web application created using an SPA framework, such as Vue or React.
 
 #### User BFF for Web, for Android, for iOS
 - Central access point for calls coming from the frontend apps.

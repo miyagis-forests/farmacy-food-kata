@@ -1,4 +1,4 @@
-# Replenisher Microservice View 
+# Replenisher Microservice and EDA View 
 The scope is the operations that the Farmacy Food replenisher can perform related to inspecting the stock and replenishing 
 the fridges and vendor kiosks. The scope also includes updating in the status of fridges vendor stores. 
 
@@ -7,7 +7,7 @@ This is a microservice architecture. Key patterns used:
 - Database per Microservice (aka Database per Service)
 - CQRS 
 
-![Replenish runtime view](../images/replenish-runtime-view-primary.png?raw=true)
+![Replenisher microservice and eda view](../images/replenish-runtime-view-primary.png)
 
 ## Element Catalog 
 
@@ -25,7 +25,7 @@ This is a microservice architecture. Key patterns used:
 #### Fridge control
 - Updates the status of smart fridges (see state machine diagram below) based on different events. 
     - Events coming from the replenisher app indicate meals added/removed from a fridge, and possibly some status information (say, 
-    the replenisher found a technical problem to reort).
+    the replenisher found a technical problem to report).
     - Events coming from calling (in a loop) the smart fridge cloud-based system to query the status of fridges.  
 - When processing events from the replenisher app, Fridge control will call the third party smart fridge system 
 (via a wrapper service) to update stock information based on meals added or removed by the replenisher. 
@@ -42,11 +42,11 @@ Food fridges.
 ## Behavior
 - UML state machine diagram showing the status of a fridge (from a Farmacy Food system perspective).
 
-![State machine of fridges](../images/state-machine-on-fridges.png?raw=true)
+![State machine of fridges](../images/state-machine-on-fridges.png)
  
 ## Related ADRs 
 - [Wrapper pattern](../ADRs/ADR003-wrapper-pattern.md)
 - [CQRS pattern](../ADRs/ADR004-cqrs-pattern.md)
 
 ## Related Views
-- TO-DO: link to order view 
+- [Order - microservice and EDA view](../architecture/order-runtime-view.md) 

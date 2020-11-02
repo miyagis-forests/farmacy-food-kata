@@ -14,11 +14,11 @@ This section brings the elicited requirements that served as foundation to the d
 The architectural views below present the services designed to support Farmacy Food's requirements. They are divided
 in five specific views which intend to best group them according to their functionality and interactions.
  
-- [Customer Account - microservice view](architecture/user-account-mgmt-runtime-view.md)
+- [Customer Account Management - microservice view](architecture/user-account-mgmt-runtime-view.md)
 - [Catalog - microservice view](architecture/catalog-runtime-view.md)
 - [Order - microservice and EDA view](architecture/order-runtime-view.md)
 - [Customer at pick-up location - microservice and EDA view](architecture/customer-pickup-microservice-view.md)
-- [Replenisher - runtime view](architecture/replenish-runtime-view.md) 
+- [Replenisher - microservice and EDA view](architecture/replenish-runtime-view.md) 
 
 ### ADRs
 
@@ -62,4 +62,4 @@ other Farmacy Food stakeholders.
 - In a seminal 1976 [paper](https://www.ics.uci.edu/~andre/ics223w2006/deremerkron.pdf), Frank DeRemer and Hans Kron described like this the concern that 15 years later would drive the advent of the *software architecture* field: "However, current languages discourage the accurate recording of the overall solution structure; they force us to write programs in which we are so preoccupied with the trees that we lose sight of the forest, as do the readers of our programs!" For long, we have used the ability to see the forest and not only the trees as a metaphor for thinking the software architecture. 
 - In The Karate Kid, Miyagi and Daniel-san form a team and open a store called *Miyagi's Little Trees*. So, paying homage to the movie and embracing the architecture metaphor, we are team **Miyagi's Little Forests**. 
 
-![Miyagi and Daniel-san](images/Miyagi-and-Daniel-san.jpg?raw=true)
+![Miyagi and Daniel-san](images/Miyagi-and-Daniel-san.jpg)

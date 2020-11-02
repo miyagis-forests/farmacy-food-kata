@@ -11,8 +11,8 @@ processing an order. Key patterns used:
 - CQRS
 - Publish-subscribe (in the event-driven architecture) 
 
-![Order runtime view](../images/order-runtime-view-primary.png?raw=true)
-![Notation key](../images/notation-key-runtime-views.png?raw=true)
+![Order runtime view](../images/order-runtime-view-primary.png)
+![Notation key](../images/notation-key-runtime-views.png)
 
 
 ## Element Catalog 
@@ -66,7 +66,7 @@ from the [catalog](catalog-runtime-view.md).
 be picked up at a smart fridge location. 
 * The diagram uses the UML Sequence Diagram notation, except that we used our component symbols up on top instead of
 UML objects.   
-![Order Sequence Diagram](../images/order-runtime-view-sd.png?raw=true)
+![Order Sequence Diagram](../images/order-runtime-view-sd.png)
 
  
 ## Related ADRs 
@@ -76,5 +76,5 @@ UML objects.
 - [BFF pattern](../ADRs/ADR002-bff-pattern.md)
 
 ## Related Views
-- [Customer Account - microservice view](user-account-mgmt-runtime-view.md)
+- [Customer Account Management - microservice view](user-account-mgmt-runtime-view.md)
 - [Catalog - microservice view](catalog-runtime-view.md)

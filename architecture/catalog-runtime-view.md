@@ -8,7 +8,7 @@ This is a microservice architecture. Key patterns used:
 - CQRS 
 - Wrapper (aka Legacy Wrapper, Anticorruption Layer)
 
-![Catalog runtime view](../images/catalog-runtime-view-primary.png?raw=true)
+![Catalog runtime view](../images/catalog-runtime-view-primary.png)
 
 ## Element Catalog 
 
@@ -36,6 +36,6 @@ used for retrieving plotted maps with pick-up locations.
 - [BFF pattern](../ADRs/ADR002-bff-pattern.md)
 
 ## Related Views
-- [Customer Account - microservice view](user-account-mgmt-runtime-view.md)
+- [Customer Account Management - microservice view](user-account-mgmt-runtime-view.md)
 - [Order - microservice and EDA view](order-runtime-view.md)
  

@@ -1,4 +1,4 @@
-# Customer Pickup Microservice View 
+# Customer at Pick-up Location Microservice and EDA View 
 The scope is the operations that the customer can perform in person.
 In these scenarios, either the smart fridge or the cashier POS acts as entry points to the system.
  
@@ -11,7 +11,7 @@ This is a microservice architecture. Key patterns used:
 - CQRS
 - Publish-subscribe (in the event-driven architecture)
 
-![customer pickup microservice view](../images/customer-pickup-microservice-view-primary.png)
+![customer at pick-up location microservice and eda view](../images/customer-pickup-microservice-view-primary.png)
 
 ## Element Catalog 
 

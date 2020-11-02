@@ -1,10 +1,10 @@
 # Customer Pickup Microservice View 
 The scope is the operations that the customer can perform in person.
-In these scenarios, the smart fridge or the POS cashier act as entry points to the system.
+In these scenarios, either the smart fridge or the cashier POS acts as entry points to the system.
  
 The interactions include:
-- picking up an already ordered food; and
-- purchasing a meal on the spot and retrieving it right away.
+- picking up already ordered meals; and
+- purchasing meals on the spot and collecting it right away.
 
 This is a microservice architecture. Key patterns used:
 - Wrapper (aka Legacy Wrapper, Anticorruption Layer)
@@ -15,8 +15,8 @@ This is a microservice architecture. Key patterns used:
 
 ## Element Catalog 
 
-#### Customer, Smart Fridge, POS Cashier
-- The actual customer (in person), Smart Fridge and POS Cashier.
+#### Customer, Smart Fridge, Cashier POS
+- The actual customer (in person), Smart Fridge and ashier POS.
 
 #### Smart fridge management system, Vendor management system
 - Systems that provide APIs for querying and managing the state of the smart fridges
@@ -24,8 +24,9 @@ and vendor management systems.
 - Proprietary technology, managed by third-parties.
 
 #### Smart fridge wrapper, Vendor wrapper
-- [Wrapper services](../ADRs/ADR003-wrapper-pattern.md) for the vendor clouds. Their goal is
-to decouple our platform from the specifics of each third-party systems.
+- [Wrapper services](../ADRs/ADR003-wrapper-pattern.md) for interacting with third-party partner systems in the cloud. The goal
+ of the wrapper services is to avoid tight coupling between Farmacy Food business logic implementation and 
+ the specifics of each third-party system.
 
 #### Pick-up transaction updater
 - A batch program that queries the Smart Fridge and Vendor management systems for updates and
@@ -33,10 +34,10 @@ posts them on the Inventory and Order topics for later handling by the `Inventor
 `Order processing` services.
 
 #### Inventory Command
-- Service that handles commands updating the inventory.
+- Reactive service (topic susbscriber) that handles commands updating the inventory.
 
 #### Order processing 
-- Component responsible for processing events about orders.
+- Reactive service (topic susbscriber) responsible for processing events about orders.
 
 
 ## Behavior

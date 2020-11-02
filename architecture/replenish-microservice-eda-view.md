@@ -8,6 +8,8 @@ This is a microservice architecture. Key patterns used:
 - CQRS 
 
 ![Replenisher microservice and eda view](../images/replenish-microservice-eda-view-primary.png)
+![Notation key](../images/notation-key-microservice-views.png)
+
 
 ## Element Catalog 
 

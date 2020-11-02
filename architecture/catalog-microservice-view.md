@@ -9,6 +9,7 @@ This is a microservice architecture. Key patterns used:
 - Wrapper (aka Legacy Wrapper, Anticorruption Layer)
 
 ![Catalog runtime view](../images/catalog-microservice-view-primary.png)
+![Notation key](../images/notation-key-microservice-views.png)
 
 ## Element Catalog 
 

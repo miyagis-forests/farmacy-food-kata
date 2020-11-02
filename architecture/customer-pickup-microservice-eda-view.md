@@ -12,6 +12,7 @@ This is a microservice architecture. Key patterns used:
 - Publish-subscribe (in the event-driven architecture)
 
 ![customer at pick-up location microservice and eda view](../images/customer-pickup-microservice-view-primary.png)
+![Notation key](../images/notation-key-microservice-views.png)
 
 ## Element Catalog 
 

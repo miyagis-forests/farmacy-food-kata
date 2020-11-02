@@ -8,6 +8,7 @@ This is a microservice architecture. Key patterns used:
 - CQRS 
 
 ![Customer account management runtime view](../images/user-account-mgmt-microservice-view-primary.png)
+![Notation key](../images/notation-key-microservice-views.png)
 
 ## Element Catalog 
 

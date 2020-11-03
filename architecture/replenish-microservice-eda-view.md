@@ -1,6 +1,6 @@
 # Replenisher Microservice and EDA View 
 The scope is the operations that the Farmacy Food replenisher can perform related to inspecting the stock and replenishing 
-the fridges and vendor kiosks. The scope also includes updating in the status of fridges vendor stores. 
+the fridges and vendor kiosks. The scope also includes updating the status of fridges and vendor stores. 
 
 This is a microservice architecture. Key patterns used:
 - BFF
@@ -14,7 +14,7 @@ This is a microservice architecture. Key patterns used:
 ## Element Catalog 
 
 #### Farmacy Food Android app
-- Mobile application created using native language for Android, such as Kotlin or Java.
+- Mobile application created using a native language for Android, such as Kotlin or Java.
 - It's the application the replenisher uses to enter stock updates into the system, both for fridges and vendor kiosks.  
 
 #### Replenish BFF for Android
@@ -22,12 +22,16 @@ This is a microservice architecture. Key patterns used:
 - Produces inventory events to a Kafka topic for placing or removing meals, and updating stock information.
 
 #### Inventory Command
-- Listener to inventory events produced by a replenisher. It updates stock information in the master inventory DB for vendor kiosks and fridges. 
+- Listener to inventory events that correspond to actions taken by the replenisher at the pick-up point. Examples of
+such events include: Meals Added to Fridge, Meals Removed from Fridge, Meals Added to Vendor Kiosk. 
+- It updates stock information in the master inventory DB for vendor kiosks and fridges. 
 
 #### Inventory data sync
-- Batch program that in a loop reads data from Inventory, Kiosks and Fridges sources in order to synchronize data to Inventory query view. 
-It’s important to note that customers (users) need to know what items are available and what points of sale (kiosks and smart fridges)
-are operational for purchase and pick up.        
+- Batch program that in a loop reads data from Inventory, Kiosks and Fridges data sources in order to synchronize data to the Inventory query view. 
+- The inventory query view is also used when customers look at meals in the [catalog](catalog-microservice-view.md), 
+and when the user is placing an [order](order-microservice-eda-view.md). In both cases, the system needs to know what items are available and what points of sale (kiosks and smart fridges)
+are operational for purchase and pick up. That's why the inventory query view contains inventory data as well as 
+status and other data about the fridges and vendor kiosks.         
 
 #### Fridge control
 - Updates the status of smart fridges (see state machine diagram below) based on different events. 
@@ -61,3 +65,4 @@ Food fridges.
 
 ## Related Views
 - [Order - microservice and EDA view](order-microservice-eda-view.md) 
+- [Catalog - microservice view](catalog-microservice-view.md)

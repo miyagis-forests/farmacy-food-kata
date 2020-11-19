@@ -1,8 +1,10 @@
 # Quality attribute requirements of the Farmacy Food system
 
-A proper elicitation of quality attribute requirements (aka non-functional requirements) requires a conversation with 
-various system stakeholders. 
-In this document, we listed a few requirements that we assumed would be in place. 
+A proper elicitation of quality attribute requirements (aka architecture characteristics, non-functional requirements) 
+requires a conversation with various system stakeholders. That conversation would allow: *(i)* specifying these requirements 
+in a testable/measurable format; and *(ii)* prioritizing the requirements. 
+
+In this document, we listed a few requirements that we *assumed* would be important for the system.  
 
 ## *Interoperability with smart fridge supplier* 
 - The cost to adapt the Farmacy Food system to interact with the API provided by a new smart fridge supplier should be 

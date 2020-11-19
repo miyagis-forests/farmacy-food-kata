@@ -8,7 +8,7 @@ This section brings the requirements (some from the [provided document](https://
 some from assumptions we made) that served as drivers for the design decisions in this proposal. 
 
 - [Functional requirements](requirements/functional-rqmts.md)
-- [Quality attribute requirements](requirements/quality-attribute-rqmts.md)
+- [Quality attribute requirements](requirements/quality-attribute-rqmts.md), aka architecture characteristics
 
 ### Architecture
 

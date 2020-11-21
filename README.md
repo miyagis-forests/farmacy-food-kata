@@ -20,6 +20,7 @@ into five views, which correspond to the main capabilities or subdomains in scop
 - [Order - microservice and EDA view](architecture/order-microservice-eda-view.md)
 - [Customer at pick-up location - microservice and EDA view](architecture/customer-pickup-microservice-eda-view.md)
 - [Replenisher - microservice and EDA view](architecture/replenish-microservice-eda-view.md) 
+- [Hexagonal reference architeture view](architecture/hexagonal-reference-architecture.md) 
 
 ### ADRs
 

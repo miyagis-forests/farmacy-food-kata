@@ -1,4 +1,4 @@
-# ADR 002: Use the BFF pattern  
+# ADR 003: Use the BFF pattern  
 We have a microservice architecture with several REST services and different types of frontends: Web application, 
 iOS application, Android application, public API clients (for the future), chatbot (also for the future). Different 
 frontends may require slightly different message formats, message structures, headers, etc.     

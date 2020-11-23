@@ -71,3 +71,4 @@ posted to the Inventory and Order topics for later handling by the `Inventory co
 
 ## Related Views
 - [Order - microservice and EDA view](order-microservice-eda-view.md) 
+- [Replenisher - microservice and EDA view](replenish-microservice-eda-view.md) 

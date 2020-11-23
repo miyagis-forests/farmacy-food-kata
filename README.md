@@ -22,6 +22,7 @@ into five views, which correspond to the main capabilities or subdomains in scop
 - [Customer at pick-up location - microservice and EDA view](architecture/customer-pickup-microservice-eda-view.md)
 - [Replenisher - microservice and EDA view](architecture/replenish-microservice-eda-view.md) 
 - [Hexagonal reference architeture view](architecture/hexagonal-reference-architecture.md) 
+- [AWS deployment view](architecture/aws-deployment-view.md) 
 
 ### ADRs
 
@@ -32,6 +33,7 @@ The linked ADRs recording the main architecture decisions regarding the proposed
 - ADR 003 - [BFF pattern](ADRs/ADR003-bff-pattern.md)
 - ADR 004 - [Wrapper pattern](ADRs/ADR004-wrapper-pattern.md)
 - ADR 005 - [CQRS pattern](ADRs/ADR005-cqrs-pattern.md)
+- ADR 006 - [AWS as the cloud provider](ADRs/ADR006-aws-as-cloud-provider.md)
 
 <sub>***Note***: *we used [this ADR template](https://github.com/pmerson/ADR-template/blob/master/ADR-template.md). It is slightly 
 different from the template presented by Neal during the first Kata session. 

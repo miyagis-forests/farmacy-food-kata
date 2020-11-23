@@ -1,4 +1,4 @@
-# ADR 003: Use the Wrapper pattern
+# ADR 004: Use the Wrapper pattern
 Farmacy Food interacts with many third-party partner systems. The interfaces of these external systems are bound to
  differ greatly. Such variety emerges both from a standards and a technology point of view.
 

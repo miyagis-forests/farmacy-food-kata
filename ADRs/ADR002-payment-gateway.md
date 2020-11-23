@@ -1,4 +1,4 @@
-# ADR 001: Use Payment Gateway in self-hosted mode 
+# ADR 002: Use Payment Gateway in self-hosted mode 
 There are different versions of the Farmacy Food app (web version, iOS native app, Android native app). 
 The app can take orders and give customers flexible yet secure payment options.  
 The payment solution should be simple and easy to use, provide scalability, and work on native mobile apps.

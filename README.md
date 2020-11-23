@@ -15,6 +15,7 @@ some from assumptions we made) that served as drivers for the design decisions i
 The architecture views below present the services designed to address Farmacy Food's requirements. They are divided
 into five views, which correspond to the main capabilities or subdomains in scope for our Farmacy Food system. 
  
+- [Context diagram](architecture/context-diagram.md) 
 - [Customer Account Management - microservice view](architecture/user-account-mgmt-microservice-view.md)
 - [Catalog - microservice view](architecture/catalog-microservice-view.md)
 - [Order - microservice and EDA view](architecture/order-microservice-eda-view.md)

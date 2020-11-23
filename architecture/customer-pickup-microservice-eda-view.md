@@ -24,10 +24,31 @@ This is a microservice architecture. Key patterns used:
 and vendor management systems.
 - Proprietary technology, managed by third-parties.
 
-#### Smart fridge wrapper, Vendor wrapper
-- [Wrapper services](../ADRs/ADR004-wrapper-pattern.md) for interacting with third-party partner systems in the cloud. The goal
- of the wrapper services is to avoid tight coupling between Farmacy Food business logic implementation and 
- the specifics of each third-party system.
+#### Smart fridge mgmt system
+- This gray circle represents the cloud-based system and API provided by a contracted smart fridge provider (third-party).
+- It offers the external API that Farmacy Food will interact with for sending and receiving information about fridges 
+(status, inventory), orders, and purchases. 
+
+#### Smart fridge wrapper
+- [Wrapper service](../ADRs/ADR004-wrapper-pattern.md) for interacting with a third-party smart fridge partner in the cloud.
+- It knows all the details (message formats and structures, authentication keys, etc.) to interact with the Smart fridge
+mgmt system. It works as an anticorruption layer (ACL).  
+- The goal of the wrapper services is to avoid tight coupling between Farmacy Food business logic implementation and 
+   the specifics of each third-party system. The diagram illustrates one such interaction. If Farmacy Food has a 
+   contract with 2+ fridge providers, then there should be one wrapper service for each.  
+
+#### Vendor mgmt system
+- This gray circle represents the cloud-based system and API provided by a vendor partner (e.g., Starbucks). 
+- It offers the external API that Farmacy Food will interact with for sending and receiving information about orders
+and local store inventory. 
+
+#### Vendor wrapper
+- [Wrapper service](../ADRs/ADR004-wrapper-pattern.md) for interacting with a third-party vendor partner in the cloud.
+- It knows all the details (message formats and structures, authentication keys, etc.) to interact with the Vendor 
+mgmt system. It works as an anticorruption layer (ACL).  
+- The goal of the wrapper services is to avoid tight coupling between Farmacy Food business logic implementation and 
+   the specifics of each third-party system. The diagram illustrates one such interaction. If Farmacy Food has a 
+   contract with 2+ vendors, then there should be one wrapper service for each.  
 
 #### Pick-up transaction updater
 - A batch program that queries the Smart Fridge and Vendor management systems for updates. Changes are

@@ -54,6 +54,18 @@ Food fridges.
 - Batch program that in a loop calls the cloud-based vendor kiosk management system to get the status of the vendor kiosks points of sale. 
 - It makes the calls via a wrapper service. 
 
+#### Smart fridge mgmt system
+- See [catalog in the Customer at Pick-up Location Microservice and EDA View](customer-pickup-microservice-eda-view.md).
+
+#### Smart fridge wrapper
+- See [catalog in the Customer at Pick-up Location Microservice and EDA View](customer-pickup-microservice-eda-view.md).
+
+#### Vendor mgmt system
+- See [catalog in the Customer at Pick-up Location Microservice and EDA View](customer-pickup-microservice-eda-view.md).
+
+#### Vendor wrapper
+- See [catalog in the Customer at Pick-up Location Microservice and EDA View](customer-pickup-microservice-eda-view.md).
+
 ## Behavior
 - UML state machine diagram showing the status of a fridge (from a Farmacy Food system perspective).
 

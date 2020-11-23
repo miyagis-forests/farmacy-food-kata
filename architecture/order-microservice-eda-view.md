@@ -40,6 +40,18 @@ payment status.
 #### Payflow by PayPal
 - External payment gateway service that offers a public API to merchant partners. 
 
+#### Smart fridge mgmt system
+- See [catalog in the Customer at Pick-up Location Microservice and EDA View](customer-pickup-microservice-eda-view.md).
+
+#### Smart fridge wrapper
+- See [catalog in the Customer at Pick-up Location Microservice and EDA View](customer-pickup-microservice-eda-view.md).
+
+#### Vendor mgmt system
+- See [catalog in the Customer at Pick-up Location Microservice and EDA View](customer-pickup-microservice-eda-view.md).
+
+#### Vendor wrapper
+- See [catalog in the Customer at Pick-up Location Microservice and EDA View](customer-pickup-microservice-eda-view.md).
+
 #### Customer notification
 - Reponsible for sending out notifications to the customers via one or more mechanisms: 
     - email

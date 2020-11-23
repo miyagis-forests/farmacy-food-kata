@@ -46,8 +46,8 @@ Facebook account.
 - N/A.
  
 ## Related ADRs 
-- [BFF pattern](../ADRs/ADR002-bff-pattern.md)
-- [CQRS pattern](../ADRs/ADR004-cqrs-pattern.md)
+- [BFF pattern](../ADRs/ADR003-bff-pattern.md)
+- [CQRS pattern](../ADRs/ADR005-cqrs-pattern.md)
 
 ## Related Views
 - [Catalog - microservice view](catalog-microservice-view.md)

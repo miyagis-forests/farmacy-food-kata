@@ -26,10 +26,11 @@ into five views, which correspond to the main capabilities or subdomains in scop
 
 The linked ADRs recording the main architecture decisions regarding the proposed design, including their context and rationale.
 
-- ADR 001 - [Payment gateway](ADRs/ADR001-payment-gateway.md)
-- ADR 002 - [BFF pattern](ADRs/ADR002-bff-pattern.md)
-- ADR 003 - [Wrapper pattern](ADRs/ADR003-wrapper-pattern.md)
-- ADR 004 - [CQRS pattern](ADRs/ADR004-cqrs-pattern.md)
+- ADR 001 - [Microservice style](ADRs/ADR001-microservice-style.md)
+- ADR 002 - [Payment gateway](ADRs/ADR002-payment-gateway.md)
+- ADR 003 - [BFF pattern](ADRs/ADR003-bff-pattern.md)
+- ADR 004 - [Wrapper pattern](ADRs/ADR004-wrapper-pattern.md)
+- ADR 005 - [CQRS pattern](ADRs/ADR005-cqrs-pattern.md)
 
 <sub>***Note***: *we used [this ADR template](https://github.com/pmerson/ADR-template/blob/master/ADR-template.md). It is slightly 
 different from the template presented by Neal during the first Kata session. 

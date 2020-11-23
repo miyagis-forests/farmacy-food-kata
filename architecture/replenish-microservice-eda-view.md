@@ -60,8 +60,8 @@ Food fridges.
 ![State machine of fridges](../images/replenish-microservices-eda-state-machine.png)
  
 ## Related ADRs 
-- [Wrapper pattern](../ADRs/ADR003-wrapper-pattern.md)
-- [CQRS pattern](../ADRs/ADR004-cqrs-pattern.md)
+- [Wrapper pattern](../ADRs/ADR004-wrapper-pattern.md)
+- [CQRS pattern](../ADRs/ADR005-cqrs-pattern.md)
 
 ## Related Views
 - [Order - microservice and EDA view](order-microservice-eda-view.md) 

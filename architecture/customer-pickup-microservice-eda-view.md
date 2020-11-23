@@ -25,7 +25,7 @@ and vendor management systems.
 - Proprietary technology, managed by third-parties.
 
 #### Smart fridge wrapper, Vendor wrapper
-- [Wrapper services](../ADRs/ADR003-wrapper-pattern.md) for interacting with third-party partner systems in the cloud. The goal
+- [Wrapper services](../ADRs/ADR004-wrapper-pattern.md) for interacting with third-party partner systems in the cloud. The goal
  of the wrapper services is to avoid tight coupling between Farmacy Food business logic implementation and 
  the specifics of each third-party system.
 
@@ -45,8 +45,8 @@ posted to the Inventory and Order topics for later handling by the `Inventory co
 - N/A.
  
 ## Related ADRs 
-- [CQRS pattern](../ADRs/ADR004-cqrs-pattern.md)
-- [Wrapper pattern](../ADRs/ADR003-wrapper-pattern.md)
+- [CQRS pattern](../ADRs/ADR005-cqrs-pattern.md)
+- [Wrapper pattern](../ADRs/ADR004-wrapper-pattern.md)
 
 ## Related Views
 - [Order - microservice and EDA view](order-microservice-eda-view.md) 

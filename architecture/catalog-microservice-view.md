@@ -30,10 +30,7 @@ used for retrieving plotted maps with pick-up locations.
 - Interaction options to be further designed. 
 
 ## Behavior
-- UML activity diagram to explain the interactions between customer and catalog service
-
-![Activity diagram](../images/activity-diagram-for-catalog-view.png)
-
+- N/A
  
 ## Related ADRs 
 - [Wrapper pattern](../ADRs/ADR004-wrapper-pattern.md)

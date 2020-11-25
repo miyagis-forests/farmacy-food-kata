@@ -61,9 +61,9 @@ But what we're suggesting can be as simple as:
   - Create a space (e.g., a slack channel) for occasionally discussing changes and evolution of the reference architecture. 
   Later on, when Farmacy Food becomes a larger enterprise, it could be done in an "architecture guild".   
 - Farmacy Food needs a team of developers familiar with microservice development, [microservice patterns](https://microservices.io/),
- as well as with tools and frameworks such as: 
+ as well as with tools and frameworks, such as: 
   - Spring Boot 
   - Docker
   - Kubernetes
-  - Kafka
+  - Spring Cloud AWS
 - The team will also need some basic knowledge around tools for log consolidation, monitoring, and distributed tracing for microservices. 

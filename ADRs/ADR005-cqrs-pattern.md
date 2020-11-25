@@ -9,9 +9,10 @@ We will use the [CQRS pattern](https://udidahan.com/2009/12/09/clarified-cqrs/) 
 - an independently deployed service takes care queries. It reads data from a query view that is optimized for data reads.
 ("Optimized" means using DB technologies and techniques that favor performance, such as: NoSQL, desnormalized view, memory cache, sharding, replication.)  
 - an independently deployed service takes care of commands. It may be a REST service that gets POST commands or a reactive service
-that subscribes to a Kafka topic and gets messages that updates the master database for the scope of that service. 
-- a batch component (example: K8S cron job or Kafka connect to the database) synchronizes the data between the master database and the query views. 
-The frequency of data synchronization varies--it can be trigger-based, every 5 minuts, every hour, ..., once a day, etc.   
+that subscribes to a pub-sub topic and gets messages that updates the master database for the scope of that service. 
+- a batch component (example: K8S cron job or logic activated by database-triggered events) synchronizes the data between 
+the master database and the query views. The frequency of data synchronization varies--it can be trigger-based, 
+every 5 minuts, every hour, ..., once a day, etc.   
 
 In our design, we have used CQRS for:
 - Inventory

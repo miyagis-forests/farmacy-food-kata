@@ -19,7 +19,7 @@ This is a microservice architecture. Key patterns used:
 
 #### Replenish BFF for Android
 - Central access point for calls coming from the Replenisher's Android app.
-- Produces inventory events to a Kafka topic for placing or removing meals, and updating stock information.
+- Produces inventory events to a pub-sub topic for placing or removing meals, and updating stock information.
 
 #### Inventory Command
 - Listener to inventory events that correspond to actions taken by the replenisher at the pick-up point. Examples of

@@ -4,13 +4,19 @@ The organization wants to see quick growth in the number of customers and orders
 of the running platform.  
 
 ## Decision 
-The Farmacy Food server-side system will be run on a public cloud. We will use Amazon AWS as the cloud provider.
+The Farmacy Food server-side system will be run on a public cloud. We will use Amazon AWS as the cloud provider, and
+deploy the Farmacy Food system preferably using AWS-managed services.
 
 ## Rationale 
 First off, there are good reasons to deploy on the cloud:
 - In the first Kata session, Kwaku himself said he expects to use the cloud.
 - These days, virtually all startups that rely on a software solution on the Web use a public cloud infrastructure. Startups don't
-have the people and the money to install and manage physical server machines and VMs on top of those. 
+have the people and money needed to install and manage physical server machines and VMs on top of those. 
+- Microservice-based solutions like the Farmacy Food system uses several different infrastructure elements, such as
+web server, container orchestration platform, relational database, NoSQL database, and pub-sub message broker. This
+needed technology diversity increases TCO. Using managed services in the cloud alleviates the burden. For example: 
+using Kafka on premises requires configuring a cluster of ZooKeeper and Kafka servers, with tons of configuration options. 
+It is much easier (for the IT team) to use a managed cloud service, such as AWS SNS or Kinesis.
 - On premises infrastructure do not give the elasticity (horizontal scalability) [required by Farmacy Food](../requirements/quality-attribute-rqmts.md).
 (Twenty years ago, if your website/service went "viral" you would run to Radio Shack to buy more CPUs and call your ISP 
 to increase the link bandwidth. Today, we simply deploy the solution in the cloud.) 
@@ -30,4 +36,5 @@ Proposed
 
 ## Consequences
 - Farmacy Food needs to create an AWS account and hire or train an engineer that is familiar with AWS services.  
-- The CI/CD jobs/pipelines shall include integration with AWS.  
+- The CI/CD jobs/pipelines should include integration with the cloud provider services. For AWS, this is typically done
+via [CloudFormation](https://aws.amazon.com/cloudformation/) (Infrastructure as Code for AWS) and [CodeDeploy](https://aws.amazon.com/codedeploy/).  

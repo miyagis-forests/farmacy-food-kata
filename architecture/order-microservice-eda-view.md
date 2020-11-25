@@ -67,6 +67,12 @@ payment status.
     - by *Order BFF* when the customer updates or cancels an order.   
 - It uses the CQRS pattern. 
 
+#### Subscription order creation
+- This batch program generates purchases based on active subscription.
+- A subscription is charged every month. The payment has to be processed and notifications are generated, similar
+to a purchase order placed online.   
+
+
 #### Reviews
 - Has endpoints to allow the customer to rate meals, add reviews, or give non-public feedback for verified purchases
 - Has also endpoints for querying and searching reviews and ratings. These endpoints are used when looking at a meal item 

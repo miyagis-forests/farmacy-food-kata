@@ -63,7 +63,10 @@ posted to the Inventory and Order topics for later handling by the `Inventory co
 
 
 ## Behavior
-- N/A.
+- UML activity diagram to explain how the inventory and order processing are done in farmacy food system, when a customer pick-up a meal on the smart fridge.
+
+![Activity diagram](../images/activity-diagram-for-customer-at-pick-up-location.png)
+
  
 ## Related ADRs 
 - [CQRS pattern](../ADRs/ADR005-cqrs-pattern.md)

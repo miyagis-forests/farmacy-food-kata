@@ -37,6 +37,6 @@ used for retrieving plotted maps with pick-up locations.
 - [BFF pattern](../ADRs/ADR003-bff-pattern.md)
 
 ## Related Views
-- [Customer Account Management - microservice view](user-account-mgmt-microservice-view.md)
+- [User Account Management - microservice view](user-account-mgmt-microservice-view.md)
 - [Order - microservice and EDA view](order-microservice-eda-view.md)
  

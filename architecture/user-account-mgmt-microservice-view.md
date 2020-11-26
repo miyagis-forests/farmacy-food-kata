@@ -1,13 +1,15 @@
-# Customer Account Management Microservice View 
-The scope is the operations that the customer can perform related to creating and managing an account and user profile,
-which includes signing in using a Farmacy Food user ID and password or different credentials (Google, Facebook, etc.). 
+# User Account Management Microservice View 
+The scope is the operations that the user can perform related to creating and managing an account and user profile,
+which includes signing in using a Farmacy Food user ID and password or different credentials (Google, Facebook, etc.).
+The set of users include primarily the Farmacy Food customers. However, Farmacy Food representatives (e.g., replenishers) are
+also users with accounts handled by this part of the system, though they have different roles and permissions. 
 
 This is a microservice architecture. Key patterns used:
 - BFF
 - Database per Microservice (aka Database per Service)
 - CQRS 
 
-![Customer account management runtime view](../images/user-account-mgmt-microservice-view-primary.png)
+![User account management runtime view](../images/user-account-mgmt-microservice-view-primary.png)
 ![Notation key](../images/notation-key-microservice-views.png)
 
 ## Element Catalog 

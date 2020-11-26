@@ -86,7 +86,7 @@ measure to protect them from unauthorized access.
 - [CQRS pattern](../ADRs/ADR005-cqrs-pattern.md)
 
 ## Related Views
-- [Customer Account Management - microservice view](user-account-mgmt-microservice-view.md)
+- [User Account Management - microservice view](user-account-mgmt-microservice-view.md)
 - [Catalog - microservice view](catalog-microservice-view.md)
 - [Order - microservice and EDA view](order-microservice-eda-view.md)
 - [Catalog - microservice view](catalog-microservice-view.md)

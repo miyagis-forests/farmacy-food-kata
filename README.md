@@ -35,12 +35,12 @@ altogether correspond to the main capabilities provided by the Farmacy Food syst
     </td>
 </tr>
 <tr>
-    <td align="center" valign="middle"><a href="architecture/order-microservice-eda-view.md">Order - microservice and EDA view<br>
+    <td align="center"><a href="architecture/order-microservice-eda-view.md">Order - microservice and EDA view<br>
     <img src="images/order-microservice-eda-view-primary.png" width="200">
     <img src="images/order-microservice-eda-view-sd.png" width="200"></a>
     </td>
-    <td align="center"><a href="architecture/customer-pickup-microservice-eda-view.md">Customer at pick-up location - microservice and EDA view<br>
-    <img src="images/customer-pickup-microservice-view-primary.png" width="200"></a>
+    <td align="center" valign="middle"><a href="architecture/customer-pickup-microservice-eda-view.md">Customer at pick-up location - microservice and EDA view<br>
+    <img src="images/customer-pickup-microservice-view-primary.png" width="200">
     <img src="images/activity-diagram-for-customer-at-pick-up-location.png" width="200"></a>
     </td>
 </tr>

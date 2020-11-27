@@ -1,29 +1,70 @@
 # DDD Context Map
 
-Short description of the scope and nature of this architecture view. 
+<!-- Short description of the scope and nature of this architecture view. --> 
 
-![Alt text - name of the view](../images/diagram-filename.png)
+The following architecture view is a [DDD Context Map](https://learning.oreilly.com/library/view/patterns-principles-and/9781118714706/c07.xhtml). 
+It shows how the Farmacy Food system is broken up into bounded contexts (BCs) and how they interact with each other. 
+
+![DDD Context Map](../images/ddd-context-map.png)
+
+TODO key
 
 ## Element Catalog 
-(There's no need to list *all* elements in the diagram, just the ones who require further information. Give the 
- information in a bulleted list for improved readability.)
 
+<!--
 #### Element X
 - info
 - info
+-->
 
-#### Element Y
+#### Subdomain
+- TODO closer shot
 - info
+
+#### Bounded Context
+- TODO closer shot
 - info
+
+#### Conformist (BC Relationship)
+- U/D
+- TODO closer shot
+
+#### Anticorruption Layer - ACL (BC Relationship)
+- U/D
+- TODO closer shot
+
+#### Types of Technical Integrations between BCs
+- TODO closer shot
+- Via Event
+    - x
+- Via REST API
+    - x
+- Via Data Replication
+    - x
 
 ## Behavior
-- if applicable, add one or more behavior diagrams, such as sequence diagrams or state diagrams. They should complement 
-the structural diagram shown up-front.
+- N/A.
  
 ## Related ADRs 
-- just add the link
-- just add the link
+- [Microservice pattern](../ADRs/ADR004-cqrs-pattern.md)
+- [Wrapper pattern](../ADRs/ADR004-wrapper-pattern.md)
+
+<!--
+- [AWS as the cloud provider](../ADRs/ADR006-aws-as-cloud-provider.md)
+- [BFF pattern](../ADRs/ADR002-bff-pattern.md)cu
+- [CQRS pattern](../ADRs/ADR005-cqrs-pattern.md)
+- [Payment gateway](../ADRs/ADR002-payment-gateway.md)
+-->
 
 ## Related Views
-- just add the link 
-- just add the link
+- [Context Diagram](context-diagram.md)
+- [User Account Management - microservice view](user-account-mgmt-microservice-view.md)
+- [Catalog - microservice view](catalog-microservice-view.md)
+- [Order - microservice and EDA view](order-microservice-eda-view.md)
+- [Customer at Pick-up Location Microservice and EDA View](customer-pickup-microservice-eda-view.md)
+- [Replenisher - microservice and EDA view](replenish-microservice-eda-view.md)
+
+<!--
+- [AWS Deployment view](aws-deployment-view.md)
+- [Hexagonal reference architeture view](hexagonal-reference-architecture.md)
+--> 

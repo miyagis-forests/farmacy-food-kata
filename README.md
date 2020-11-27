@@ -30,26 +30,22 @@ altogether correspond to the main capabilities provided by the Farmacy Food syst
 <tr>
     <td align="center"><a href="architecture/user-account-mgmt-microservice-view.md">User Account Management - microservice view<br><img src="images/user-account-mgmt-microservice-view-primary.png" width="200"></a></td>
     <td align="center"><a href="architecture/catalog-microservice-view.md">Catalog - microservice view<br>
-    <img src="images/catalog-microservice-view-primary.png" width="200">
-    <img src="images/activity-diagram-for-catalog-view.png" width="200"></a>
+        <img src="images/catalog-microservice-view-primary.png" width="200"><img src="images/activity-diagram-for-catalog-view.png" width="200"></a>
     </td>
 </tr>
 <tr>
     <td align="center"><a href="architecture/order-microservice-eda-view.md">Order - microservice and EDA view<br>
-    <img src="images/order-microservice-eda-view-primary.png" width="200">
-    <img src="images/order-microservice-eda-view-sd.png" width="200"></a>
+        <img src="images/order-microservice-eda-view-primary.png" width="200"><img src="images/order-microservice-eda-view-sd.png" width="200"></a>
     </td>
     <td align="center" valign="middle"><a href="architecture/customer-pickup-microservice-eda-view.md">Customer at pick-up location - microservice and EDA view<br>
-    <img src="images/customer-pickup-microservice-view-primary.png" width="200">
-    <img src="images/activity-diagram-for-customer-at-pick-up-location.png" width="200"></a>
+        <img src="images/customer-pickup-microservice-view-primary.png" width="200"><img src="images/activity-diagram-for-customer-at-pick-up-location.png" width="200"></a>
     </td>
 </tr>
 <tr>
     <td colspan="2" align="center">
-    <a href="architecture/replenish-microservice-eda-view.md">Replenisher - microservice and EDA view<br>
-    <img src="images/replenish-microservice-eda-view-primary.png" width="200">
-    <img src="images/replenish-microservices-eda-state-machine.png" width="200">
-    </a>
+        <a href="architecture/replenish-microservice-eda-view.md">Replenisher - microservice and EDA view<br>
+        <img src="images/replenish-microservice-eda-view-primary.png" width="200"><img src="images/replenish-microservices-eda-state-machine.png" width="200">
+        </a>
     </td>
 </tr>
 </table>

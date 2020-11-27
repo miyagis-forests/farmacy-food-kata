@@ -54,7 +54,7 @@ The following architecture view is a [DDD Context Map](https://learning.oreilly.
 It shows how the Farmacy Food system is broken up into bounded contexts (BCs) and how they interact with each other. 
 
 <table>
-<tr><td align="center"><a href="architecture/ddd-context-map.md">DDD Context Diagram<br><img src="images/ddd-context-map.png" width="200"></a></td></tr>
+<tr><td align="center"><a href="architecture/ddd-context-map.md">DDD Context Map<br><img src="images/ddd-context-map.png" width="200"></a></td></tr>
 </table>
  
 We believe the implementation of each BC can follow the [hexagonal architecture](https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/). 

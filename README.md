@@ -30,7 +30,7 @@ altogether correspond to the main capabilities provided by the Farmacy Food syst
 <tr>
     <td align="center"><a href="architecture/user-account-mgmt-microservice-view.md">User Account Management - microservice view<br><img src="images/user-account-mgmt-microservice-view-primary.png" width="200"></a></td>
     <td align="center"><a href="architecture/catalog-microservice-view.md">Catalog - microservice view<br>
-    <img src="images/catalog-microservice-view-primary.png" width="200"></a>
+    <img src="images/catalog-microservice-view-primary.png" width="200">
     <img src="images/activity-diagram-for-catalog-view.png" width="200"></a>
     </td>
 </tr>

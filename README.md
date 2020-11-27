@@ -17,32 +17,57 @@ Here you find the documentation of the software architecture that we envision to
 As a starting point, there's a context diagram that gives an overview of the external elements that interact with 
 what we called the *Farmacy Food System*, which is the scope of this software architecture.
 
-- [Context diagram](architecture/context-diagram.md) 
+<table>
+<tr><td align="center"><a href="architecture/context-diagram.md">Context Diagram<br><img src="images/context-diagram.png" width="200"></a></td></tr>
+</table>
 
 The main part of the software architecture is the set of five *architecture views* linked below. These views provide a runtime 
 perspective of the system, that is, they show the components and connectors that have runtime presence and 
 altogether correspond to the main capabilities provided by the Farmacy Food system. 
 
-- [User Account Management - microservice view](architecture/user-account-mgmt-microservice-view.md)
-- [Catalog - microservice view](architecture/catalog-microservice-view.md)
-- [Order - microservice and EDA view](architecture/order-microservice-eda-view.md)
-- [Customer at pick-up location - microservice and EDA view](architecture/customer-pickup-microservice-eda-view.md)
-- [Replenisher - microservice and EDA view](architecture/replenish-microservice-eda-view.md)
+
+<table>
+<tr>
+    <td align="center"><a href="architecture/user-account-mgmt-microservice-view.md">User Account Management - microservice view<br><img src="images/user-account-mgmt-microservice-view-primary.png" width="200"></a></td>
+    <td align="center"><a href="architecture/catalog-microservice-view.md">Catalog - microservice view<br><img src="images/catalog-microservice-view-primary.png" width="200"></a></td>
+</tr>
+<tr>
+    <td align="center"><a href="architecture/order-microservice-eda-view.md">Order - microservice and EDA view<br>
+    <img src="images/order-microservice-eda-view-primary.png" width="200">
+    <img src="images/order-microservice-eda-view-sd.png" width="200"></a>
+    </td>
+    <td align="center"><a href="architecture/customer-pickup-microservice-eda-view.md">Customer at pick-up location - microservice and EDA view<br><img src="images/customer-pickup-microservice-view-primary.png" width="200"></a></td>
+</tr>
+<tr>
+    <td colspan="2" align="center">
+    <a href="architecture/replenish-microservice-eda-view.md">Replenisher - microservice and EDA view<br>
+    <img src="images/replenish-microservice-eda-view-primary.png" width="200">
+    <img src="images/replenish-microservices-eda-state-machine.png" width="200">
+    </a>
+    </td>
+</tr>
+</table>
 
 The following architecture view is a [DDD Context Map](https://learning.oreilly.com/library/view/patterns-principles-and/9781118714706/c07.xhtml). 
 It shows how the Farmacy Food system is broken up into bounded contexts (BCs) and how they interact with each other. 
 
-- TO-DO
+<table>
+<tr><td align="center"><a href="architecture/ddd-context-map.md">DDD Context Diagram<br><img src="images/ddd-context-map.png" width="200"></a></td></tr>
+</table>
  
 We believe the implementation of each BC can follow the [hexagonal architecture](https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/). 
 The following architecture describes how the code of each BC can be structured according to this architecture style.  
  
-- [Hexagonal reference architeture view](architecture/hexagonal-reference-architecture.md) 
+<table>
+<tr><td align="center"><a href="architecture/hexagonal-reference-architecture.md">Hexagonal reference architeture view<br><img src="images/hexagonal-reference-architecture.png" width="200"></a></td></tr>
+</table>
 
 Finally, we have a deployment view that describes the runtime infrastructure for the components seen in the five 
 runtime architecture views.    
 
-- [AWS deployment view](architecture/aws-deployment-view.md) 
+<table>
+<tr><td align="center"><a href="architecture/aws-deployment-view.md">AWS deployment view<br><img src="images/aws-deployment-view-primary.png" width="200"></a></td></tr>
+</table>
 
 
 ### ADRs

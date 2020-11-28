@@ -36,9 +36,10 @@ data between a master data store and its replicas, or call third-party systems t
 - N/A.
  
 ## Related ADRs 
-- [BFF pattern](../ADRs/ADR002-bff-pattern.md)
-- [Wrapper pattern](../ADRs/ADR003-wrapper-pattern.md)
-- [Microservice pattern](../ADRs/ADR004-cqrs-pattern.md)
+- [Microservice Style](../ADRs/ADR001-microservice-style.md)
+- [BFF pattern](../ADRs/ADR003-bff-pattern.md)
+- [Wrapper pattern](../ADRs/ADR004-wrapper-pattern.md)
+- [CQRS pattern](../ADRs/ADR005-cqrs-pattern.md)
 
 ## Related Views
 - [Context Diagram](context-diagram.md)

@@ -1,5 +1,9 @@
 This is the github repo for the solution created by team Miyagi's Little Forests for the O'Reilly Architecture Kata. It contains a proposed architecture for [Farmacy Food](https://www.farmacyfood.com/).
 
+Team contact: [miyagisforests@gmail.com](mailto:miyagisforests@gmail.com)
+
+Five-minute video presentation: _coming soon_ 
+
 # Farmacy Food system
 
 ### Requirements

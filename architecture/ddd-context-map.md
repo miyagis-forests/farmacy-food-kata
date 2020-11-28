@@ -10,32 +10,30 @@ It shows how the Farmacy Food system is broken up into bounded contexts (BCs) an
 ![DDD Context Map](../images/ddd-context-map-key.png)
 
 
-Subdomains reflect and divide the areas of business that have any influence on our system.
-
-Bounded contexts mark the reach of each one of models we use in our solution. They make
-clear where each context begins and end. Business strategy, team dynamics and other technical
+_Subdomains_ reflect and divide the areas of business that are of importance to our system. _Bounded Contexts_
+(BC) establish the limits the validity of each of the models in our solution. They make
+clear where every context begins and ends. Business strategy, team dynamics and other technical
 aspects are relevant in the design of these boundaries.
 
-As subdomains exist in the problem space and BCs in the solution space, the ideal design
-seeks to model BCs that map into exactly one subdomain. Therefore, in our map, the subdomains
-under control of our application are defined each exactly as one BC. 
+Subdomains exist in the problem space and BCs in the solution space. The ideal model
+seeks to match these two views, designing BCs that map into exactly one subdomain. Therefore,
+in our map, the subdomains under control of our application are each defined exactly as one BC. 
 
-As the map shows, our model specifies ***Inventory*** and ***Order** as core bounded contexts.
-the establishment of these key BCs demand strategic vision. This typically takes place under
+Our model defines ***Inventory*** and ***Order** as core bounded contexts.
+The decision of which BC are core demands strategic vision. This typically takes place under
 the influence of Domain Experts. Our proposal chose these two BCs as we envision Farmacy Food's
-main business challeng is of a logistics nature.
+main business challenge is of a logistics nature.
 
 ## Element Catalog 
 
-
 #### Bounded Contexts and Subdomains
 
-![Bounded context closer look](../images/ddd-context-map-bc-inventory-close.png)
-
-The BCs can be seen as the logical grouping of the microservices and components portrayed in other views.
+- The BCs can be seen as the logical grouping of the microservices and components portrayed in other views.
 As stated, the BCs in our map also depict subdomains.
 
-We designated two BCs as **_core_** (Inventory, Order) and one as **_generic_** (Customer Notification). The
+    ![Bounded context closer look](../images/ddd-context-map-bc-inventory-close.png)
+
+- We designated two BCs as **_core_** (Inventory, Order) and one as **_generic_** (Customer Notification). The
  remaining are classified as **_supporting_** BCs.
 
 - The identified BCs are:
@@ -66,40 +64,25 @@ We designated two BCs as **_core_** (Inventory, Order) and one as **_generic_** 
 
 #### Subdomain
 
-In our map, subdomains that are not BCs include only external systems.
+- In our map, only external systems form subdomains that are not also BCs.
 
-![Subdomain closer look](../images/ddd-context-map-subdomain.png)
+    ![Subdomain closer look](../images/ddd-context-map-subdomain.png)
 
 - The cataloged subdomains are:
-    - Payment Gateway
-        - External partner that will handle the specifics of payment from the customers
-    - Smartfridge
-        <!-- - Our system:
-            - Posts or updates a purchase order on the Smart Fridge system: consumer identification; meals and quantities; smart fridge location; date and time range availability
-                - Done after a customer places, edits or cancels an order for smart fridge pick up
-            - Query pick up and purchase transactions 
-                - Done periodically to find out about picked up orders and ad hoc purchases
-                - Can be combined or replaced with a push notification mechanism, if the smart fridge system has that ability
-            - Query inventory levels of one or more fridges
-                - Done when the customer is searching for meal availability per location
-            - Update fridge inventory 
-                - Done after the replenisher replenishes a fridge or confirms stock after visual inspection
-            - Query fridge status
-            - Update fridge status
-                - Done after the replenisher detects an issue or change of status in a fridge -->
-        
-    - Vendor Kiosk (Subdomain)
-        <!-- - Post or update a purchase order: consumer identification; meals and quantities; vendor store location; date and time range availability 
-            - Done after a customer places, edits or cancels an order for vendor kiosk pick up
-        - Query pick up and purchase transactions 
-            - Done periodically to find out about picked up orders and ad hoc purchases
-            - Can be combined or replaced with a push notification mechanism, if the vendor POS system has that ability -->
-        
-    - Central Kitchen
-        - Farmacy Food's ghost kitchen system
-    - Geolocation (Subdomain)
-    - Identity (Subdomain)
-    - eDietitian (Subdomain)
+    - **_Payment Gateway_**
+        - External partner that will handle the specifics of payment from the customers.
+    - **_Smartfridge_**
+        - Cloud management system for Smartfridges.      
+    - **_Vendor Kiosk_**
+        - Cloud management system for Vendor Kiosks.
+    - **_Central Kitchen_**
+        - Farmacy Food's ghost kitchen system.
+    - **_Geolocation_**
+        - Maps and GPS services.
+    - **_Identity_**
+        - Third-party mechanism for access control, such as OAuth. 
+    - **_eDietitian_**
+        - Expert system that would handle meals recommendations based on user preferences, health info, and history.
 
 
 #### Partnership (BC Relationship)

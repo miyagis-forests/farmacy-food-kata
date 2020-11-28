@@ -21,9 +21,10 @@ what we called the *Farmacy Food System*, which is the scope of this software ar
 <tr><td align="center"><a href="architecture/context-diagram.md">Context Diagram<br><img src="images/context-diagram.png" width="200"></a></td></tr>
 </table>
 
-The main part of the software architecture is the set of five *architecture views* linked below. These views provide a runtime 
+The main part of the software architecture is the set of five *architecture views* seen below. These views provide a runtime 
 perspective of the system, that is, they show the components and connectors that have runtime presence and 
-altogether correspond to the main capabilities provided by the Farmacy Food system. 
+altogether correspond to the main capabilities provided by the Farmacy Food system. They follow the microservice and EDA
+architecture styles. 
 
 
 <table>

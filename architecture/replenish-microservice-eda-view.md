@@ -78,3 +78,4 @@ Food fridges.
 ## Related Views
 - [Order - microservice and EDA view](order-microservice-eda-view.md) 
 - [Catalog - microservice view](catalog-microservice-view.md)
+- [Customer at Pick-up Location Microservice and EDA View](customer-pickup-microservice-eda-view.md)

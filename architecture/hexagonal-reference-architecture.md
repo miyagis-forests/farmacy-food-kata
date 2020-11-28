@@ -36,7 +36,7 @@ data between a master data store and its replicas, or call third-party systems t
 - N/A.
  
 ## Related ADRs 
-- [Microservice Style](../ADRs/ADR001-microservice-style.md)
+- [Microservice style](../ADRs/ADR001-microservice-style.md)
 - [BFF pattern](../ADRs/ADR003-bff-pattern.md)
 - [Wrapper pattern](../ADRs/ADR004-wrapper-pattern.md)
 - [CQRS pattern](../ADRs/ADR005-cqrs-pattern.md)

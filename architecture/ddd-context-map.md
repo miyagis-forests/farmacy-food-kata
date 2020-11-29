@@ -38,7 +38,7 @@ As stated, the BCs in our map also depict subdomains.
 
 - The identified BCs are:
     - **Meal Catalog**
-        - What meals may be available, including ingredients, nutrition facts and other data
+        - Which meals may be available, including ingredients, nutrition facts and other data.
     - **Inventory** (core)
         - Controls what is currently available -- and where.
     - **_User_**
@@ -46,21 +46,21 @@ As stated, the BCs in our map also depict subdomains.
     - **_Review_**
         - Meals reviews and ratings; Surveys
     - **_Order_** (core)
-        - Processes orders, keeping track of the global status of all transactions
+        - Processes orders, keeping track of the global status of all transactions.
     - **_Cart_**
-        - Handles the checkout process for single purchases
+        - Handles the checkout process for single purchases.
     - **_Subscription_**
         - Available and ongoing subscription plans
     - **_Payment_**
-        - Processes the payment for single and subscription-based purchases
+        - Processes the payment for single and subscription-based purchases.
     - **_Promotion_**
         - Promotions and coupons
     - **_Location_**
-        - Geographical location of the elements relevant to the business
+        - Geographical location of the elements relevant to the business.
     - **_Replenish_**
-        - Updates the status of smart fridges/vendor kiosks
+        - Updates the status of smart fridges/vendor kiosks.
     - **_Customer Notification_** (generic)
-        - Notifies the customer of updates on their orders 
+        - Notifies the customer of updates on their orders.
 
 #### Subdomain
 

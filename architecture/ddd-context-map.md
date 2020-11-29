@@ -96,11 +96,11 @@ relationships between the designed BCs as partnerships.
 #### Conformist (BC Relationship)
 ![Conformist BC Relationship closer look](../images/ddd-context-map-relationship-conformist.png)
 - The Conformist relationship between two bounded contexts (or subdomains) indicates that the _upstream_ (**`U`**) end's
-model is accepted/absorbed/taken without modification by the _downstream_ (**`D`**) counterpart.
-- In our model, this relationship is used in three scenarios. The integration with the "Identity"
-subdomain, mostly because the conventions in this subdomain, e.g. Auth0, are typically widely known and accepted.
-The eDietitian subdomain is expected to require some information to take their decisions and it would be
-natural our system provides that data as needed. Lastly, given the *Customer Notification* BC is expected
+model is accepted/absorbed without translation by the _downstream_ (**`D`**) counterpart.
+- In our model, this relationship is used in three scenarios. The integration with the "
+_Identity_
+subdomain, mostly because the models in this subdomain, e.g. OAuth, are typically widely known and accepted.
+The _eDietitian_ subdomain is expected to require some information to generate their decisions and it our system should provide that data as needed. Lastly, given the *Customer Notification* BC is expected
 to be generic, some off-the-shelf tool would likely have means of integrating with our BCs with minimized effort.
 
 #### Anticorruption Layer - ACL (BC Relationship)

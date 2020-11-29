@@ -124,7 +124,7 @@ we have also specified in the diagram the technical mechanisms used to integrate
 - **Via Data Replication**
     
     ![BC integration Via Data Replication closer look](../images/ddd-context-map-bc-via-data-replication.png)
-    - There are a few cases there the integration is achieved via Data Replication, usually managed
+    - There are a few cases in which the integration is achieved via Data Replication, usually managed
     by a batch process.
 
 ## Behavior

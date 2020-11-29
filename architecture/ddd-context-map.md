@@ -82,13 +82,16 @@ As stated, the BCs in our map also depict subdomains.
     - **_Identity_**
         - Third-party mechanism for access control, such as OAuth. 
     - **_eDietitian_**
-        - Expert system that would handle meals recommendations based on user preferences, health info, and history.
+        - Expert system that would generate meals recommendations based on user preferences, health info, and history.
 
 
 #### Partnership (BC Relationship)
 ![Partnership BC Relationship closer look](../images/ddd-context-map-relationship-conformist.png)
-- Given it is a startup with most likely one development team, we specified the
-relationships as *Partnership*. Other kinds of relationships may be possible, depending on the dynamics.
+- TODO GENERATE IMAGE
+- A *Partnership* between two BCs indicates that the teams that own such BCs intend
+to work closely. In this dynamic, the (likely common) goals of both teams are fulfilled without any kind of priority of one team over the other.
+- Given Farmacy Food is a startup, we understand it'll most likely have only one development team. With this in mind, we identified most the
+relationships between the designed BCs as partnerships.
 
 #### Conformist (BC Relationship)
 ![Conformist BC Relationship closer look](../images/ddd-context-map-relationship-conformist.png)

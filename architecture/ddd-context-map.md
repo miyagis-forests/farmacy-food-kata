@@ -20,8 +20,8 @@ seeks to match these two views, designing BCs that map into exactly one subdomai
 in our map, the subdomains under control of our application are each defined exactly as one BC. 
 
 Our model defines ***Inventory*** and ***Order*** as core bounded contexts.
-The decision of which BCs are core demands strategic vision. This typically takes place under
-the influence of Domain Experts. Our proposal chose these two BCs as we envision Farmacy Food's
+The decision of which BCs are core demands strategic vision. This must take place under
+the guidance of _domain experts_. Our proposal chose these two BCs as we envision Farmacy Food's
 main business challenge is of a logistics nature.
 
 ## Element Catalog 

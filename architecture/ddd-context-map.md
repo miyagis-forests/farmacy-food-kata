@@ -40,7 +40,7 @@ main business challenge is of a logistics nature.
 - Controls what meals are available in each smart fridge and vendlor location.
 - It's a core domain BC.
 
-![Bounded context closer look](../images/ddd-context-map-bc-inventory-close.png)
+&nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-inventory-close.png)
 
 ##### User
 - Mainly handles user profile information. For customers, that includes dietary and health information.
@@ -108,15 +108,14 @@ main business challenge is of a logistics nature.
 
 
 #### Partnership (BC Relationship)
-![Partnership BC Relationship closer look](../images/ddd-context-map-relationship-conformist.png)
-- TODO GENERATE IMAGE
+&nbsp; &nbsp; &nbsp; ![Partnership BC Relationship closer look](../images/ddd-context-map-relationship-partnership.png)
 - A *Partnership* between two BCs indicates that the teams that own such BCs intend
 to work closely. In this dynamic, the (likely common) goals of both teams are fulfilled without any kind of priority of one team over the other.
 - Given Farmacy Food is a startup, we understand it will most likely have only one development team. With this in mind, we identified most of the
 relationships between the designed BCs as partnerships.
 
 #### Conformist (BC Relationship)
-![Conformist BC Relationship closer look](../images/ddd-context-map-relationship-conformist.png)
+&nbsp; &nbsp; &nbsp; ![Conformist BC Relationship closer look](../images/ddd-context-map-relationship-conformist.png)
 - The Conformist relationship between two bounded contexts (or subdomains) indicates that the _upstream_ (**`U`**) end's
 model is accepted/absorbed without translation by the _downstream_ (**`D`**) counterpart.
 - In our model, this relationship is used in three scenarios. The integration with the _Identity_
@@ -126,7 +125,7 @@ provide that data as needed. Lastly, given the *Customer Notification* BC is exp
 to be generic, some off-the-shelf tool would likely provide the means of integrating with our BCs with minimal effort.
 
 #### Anticorruption Layer - ACL (BC Relationship)
-![ACL Relationship closer look](../images/ddd-context-map-relationship-acl.png)
+&nbsp; &nbsp; &nbsp; ![ACL Relationship closer look](../images/ddd-context-map-relationship-acl.png)
 - An anticorruption layer is used to translate the _upstream_ (**`U`**) model to and from the terms (ubiquitous language)
 of the _downstream_ (**`D`**) model. Its goal is to avoid undesirable coupling in the BC implementation toward  
 the external model.

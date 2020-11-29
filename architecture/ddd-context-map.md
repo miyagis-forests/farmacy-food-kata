@@ -2,7 +2,7 @@
 
 <!-- Short description of the scope and nature of this architecture view. --> 
 
-The following architecture view is a [DDD Context Map](https://learning.oreilly.com/library/view/patterns-principles-and/9781118714706/c07.xhtml). 
+This architecture view is a [DDD Context Map](https://learning.oreilly.com/library/view/patterns-principles-and/9781118714706/c07.xhtml). 
 It shows how the Farmacy Food system is broken up into bounded contexts (BCs) and how they interact with each other. 
 
 ![DDD Context Map](../images/ddd-context-map.png)
@@ -15,13 +15,13 @@ _Subdomains_ reflect and divide the areas of business that are of importance to 
 it clear where every context begins and ends. Business strategy, team dynamics and other technical
 aspects are relevant in the design of these boundaries.
 
-Subdomains exist in the problem space and BCs in the solution space. The ideal model
-seeks to match these two views, designing BCs that map into exactly one subdomain. Therefore,
-in our map, the subdomains under control of our application are each defined exactly as one BC. 
+Subdomains exist in the problem space and BCs in the solution space. Ideally, the scope of one BC matches the 
+domain model of one subdomain. Therefore,
+in our context map, the subdomains *that will be implemented by Farmacy Food* are each defined exactly as one BC. 
 
 Our model defines ***Inventory*** and ***Order*** as core bounded contexts.
-The decision of which BCs are core demands strategic vision. This must take place under
-the guidance of _domain experts_. Our proposal chose these two BCs as we envision Farmacy Food's
+The decision of which BCs are core requires strategic vision, and should be made under
+the guidance of _domain experts_. Our proposal shows these two BCs as core because we believe Farmacy Food's
 main business challenge is of a logistics nature.
 
 ## Element Catalog 
@@ -107,7 +107,7 @@ to be generic, some off-the-shelf tool would likely have means of integrating wi
 - An anticorruption layer is used to translate the _upstream_ (**`U`**) model to and from the terms (ubiquitous language)
 of the _downstream_ (**`D`**) model. Its goal is to prevent the external model from mudding the BC's implementation.    
 
-#### Types of Integrations Mechanisms between BCs
+#### Types of Integration Mechanisms between BCs
 
 Our context map mainly shows relationships between the BCs. To make it more complete,
 we have also specified in the diagram the technical mechanisms used to integrate each subdomain.

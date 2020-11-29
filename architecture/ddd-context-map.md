@@ -11,8 +11,8 @@ It shows how the Farmacy Food system is broken up into bounded contexts (BCs) an
 
 
 _Subdomains_ reflect and divide the areas of business that are of importance to our system. _Bounded Contexts_
-(BC) establish the limits the validity of each of the models in our solution. They make
-clear where every context begins and ends. Business strategy, team dynamics and other technical
+(BC) establish the scope of validity of each of the models in our solution. They make
+it clear where every context begins and ends. Business strategy, team dynamics and other technical
 aspects are relevant in the design of these boundaries.
 
 Subdomains exist in the problem space and BCs in the solution space. The ideal model

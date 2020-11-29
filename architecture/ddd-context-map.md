@@ -38,7 +38,7 @@ As stated, the BCs in our map also depict subdomains.
 
 - The identified BCs are:
     - **Meal Catalog**
-        - Which meals may be available, including ingredients, nutrition facts and other data.
+        - Maintains which meals may be available, including their information, such as ingredients, nutrition facts and more.
     - **Inventory** (core)
         - Controls what is currently available -- and where.
     - **_User_**

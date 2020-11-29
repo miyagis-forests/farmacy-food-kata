@@ -26,7 +26,7 @@ main business challenge is of a logistics nature.
 
 ## Element Catalog 
 
-#### Bounded Contexts and Subdomains
+#### Bounded Context and Subdomain
 
 - The BCs can be seen as the logical grouping of the microservices and components portrayed in other views.
 As stated, the BCs in our map also depict subdomains.

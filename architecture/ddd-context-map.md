@@ -38,29 +38,29 @@ As stated, the BCs in our map also depict subdomains.
 
 - The identified BCs are:
     - **Meal Catalog**
-        - Maintains which meals may be available, including their information, such as ingredients, nutrition facts and more.
+        - Manages the catalog of meals that Farmacy Food offers, with information about ingredients, nutrition facts, price, and more.
     - **Inventory** (core)
-        - Controls what is currently available -- and where.
+        - Controls what meals are available in each smart fridge and vendlor location.
     - **_User_**
-        - Mainly handles the customer information, such as profile and dietary/health information.
+        - Mainly handles user profile information. For customers, that includes dietary and health information.
     - **_Review_**
-        - Meals reviews and ratings; surveys.
+        - Manages meal reviews and ratings; surveys.
     - **_Order_** (core)
         - Processes orders, keeping track of the global status of all transactions.
     - **_Cart_**
-        - Handles the checkout process for single purchases.
+        - Handles the shopping cart and checkout process for purchases made using the Farmacy Food app.
     - **_Subscription_**
-        - Available and ongoing subscription plans.
+        - Manages plans available and ongoing customer subscriptions.
     - **_Payment_**
-        - Processes the payment for single and subscription-originated purchases.
+        - Processes the payment for orders placed on the app and subscription-originated purchases.
     - **_Promotion_**
-        - Promotions and coupons.
+        - Manages promotions and coupons.
     - **_Location_**
-        - Geographical location of the elements relevant to the business.
+        - Has the listing of pick-up locations available, and provides the customer with the ability to find a location.         
     - **_Replenish_**
-        - Updates the status of smart fridges/vendor kiosks.
+        - Updates the status of smart fridges and vendor kiosks when a Farmacy Food employee replenishes these locations.
     - **_Customer Notification_** (generic)
-        - Notifies the customer of updates on their orders.
+        - Notifies the customer of updates on their orders, subscriptions, payments, etc.
 
 #### Subdomain
 
@@ -70,19 +70,19 @@ As stated, the BCs in our map also depict subdomains.
 
 - The cataloged subdomains are:
     - **_Payment Gateway_**
-        - External partner that will handle the specifics of payment from the customers.
+        - External partner that handles customer payments.
     - **_Smartfridge_**
-        - Cloud management system for Smartfridges.      
+        - Cloud management system for Smartfridges.
     - **_Vendor Kiosk_**
         - Cloud management system for Vendor Kiosks.
     - **_Central Kitchen_**
-        - Farmacy Food's ghost kitchen system.
+        - Farmacy Food central kitchen management system.
     - **_Geolocation_**
-        - Maps and GPS services.
+        - Maps and location finding services.
     - **_Identity_**
-        - Third-party mechanism for access control, such as OAuth. 
+        - Authentication using third-party identitiy, such as Google or Facebook. 
     - **_eDietitian_**
-        - Expert system that would generate meals recommendations based on user preferences, health info, and history.
+        - Expert system that would generate meal recommendations based on user preferences, health info, and history.
 
 
 #### Partnership (BC Relationship)
@@ -90,7 +90,7 @@ As stated, the BCs in our map also depict subdomains.
 - TODO GENERATE IMAGE
 - A *Partnership* between two BCs indicates that the teams that own such BCs intend
 to work closely. In this dynamic, the (likely common) goals of both teams are fulfilled without any kind of priority of one team over the other.
-- Given Farmacy Food is a startup, we understand it'll most likely have only one development team. With this in mind, we identified most the
+- Given Farmacy Food is a startup, we understand it will most likely have only one development team. With this in mind, we identified most of the
 relationships between the designed BCs as partnerships.
 
 #### Conformist (BC Relationship)
@@ -99,13 +99,15 @@ relationships between the designed BCs as partnerships.
 model is accepted/absorbed without translation by the _downstream_ (**`D`**) counterpart.
 - In our model, this relationship is used in three scenarios. The integration with the _Identity_
 subdomain, mostly because the solutions in this subdomain, e.g. OAuth, are typically widely known and accepted.
-The _eDietitian_ subdomain is expected to require some information to generate their decisions and it our system should provide that data as needed. Lastly, given the *Customer Notification* BC is expected
-to be generic, some off-the-shelf tool would likely have means of integrating with our BCs with minimized effort.
+The _eDietitian_ subdomain is expected to require some information to generate their decisions and it our system should 
+provide that data as needed. Lastly, given the *Customer Notification* BC is expected
+to be generic, some off-the-shelf tool would likely provide the means of integrating with our BCs with minimal effort.
 
 #### Anticorruption Layer - ACL (BC Relationship)
 ![ACL Relationship closer look](../images/ddd-context-map-relationship-acl.png)
 - An anticorruption layer is used to translate the _upstream_ (**`U`**) model to and from the terms (ubiquitous language)
-of the _downstream_ (**`D`**) model. Its goal is to prevent the external model from mudding the BC's implementation.    
+of the _downstream_ (**`D`**) model. Its goal is to avoid undesirable coupling in the BC implementation toward  
+the external model.
 
 #### Types of Integration Mechanisms between BCs
 
@@ -116,16 +118,16 @@ we have also specified in the diagram the technical mechanisms used to integrate
     
     ![BC integration Via REST API closer look](../images/ddd-context-map-bc-via-rest-api.png)
     - This label shows that two BCs are mainly integrated via REST API calls.
+    
 - **Via Events**
 
     ![BC integration Via Events closer look](../images/ddd-context-map-bc-via-events.png)
-    - Denotes BCs integrated via Domain Events, typically in a publish-subscribe fashion.
+    - Denotes BCs integrated via Domain Events following the publish-subscribe messaging pattern.
 
 - **Via Data Replication**
     
     ![BC integration Via Data Replication closer look](../images/ddd-context-map-bc-via-data-replication.png)
-    - There are a few cases in which the integration is achieved via Data Replication, usually managed
-    by a batch process.
+    - There are a few cases in which the integration is achieved via Data Replication, using a batch program for data synchronization.
 
 ## Behavior
 - N/A.

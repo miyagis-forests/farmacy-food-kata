@@ -19,8 +19,8 @@ Subdomains exist in the problem space and BCs in the solution space. The ideal m
 seeks to match these two views, designing BCs that map into exactly one subdomain. Therefore,
 in our map, the subdomains under control of our application are each defined exactly as one BC. 
 
-Our model defines ***Inventory*** and ***Order** as core bounded contexts.
-The decision of which BC are core demands strategic vision. This typically takes place under
+Our model defines ***Inventory*** and ***Order*** as core bounded contexts.
+The decision of which BCs are core demands strategic vision. This typically takes place under
 the influence of Domain Experts. Our proposal chose these two BCs as we envision Farmacy Food's
 main business challenge is of a logistics nature.
 

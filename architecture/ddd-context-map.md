@@ -10,10 +10,13 @@ It shows how the Farmacy Food system is broken up into bounded contexts (BCs) an
 ![DDD Context Map](../images/ddd-context-map-key.png)
 
 
-_Subdomains_ reflect and divide the areas of business that are of importance to our system. _Bounded Contexts_
-(BC) establish the scope of validity of each of the models in our solution. They make
+_Subdomains_ reflect and divide the areas of business that are of importance to our system. 
+
+_Bounded Contexts_ (BCs) establish the scope of validity of each of the models in our solution. They make
 it clear where every context begins and ends. Business strategy, team dynamics and other technical
 aspects are relevant in the design of these boundaries.
+
+The BCs can be seen as the logical grouping of the microservices and components portrayed in other views.
 
 Subdomains exist in the problem space and BCs in the solution space. Ideally, the scope of one BC matches the 
 domain model of one subdomain. Therefore,
@@ -24,65 +27,84 @@ The decision of which BCs are core requires strategic vision, and should be made
 the guidance of _domain experts_. Our proposal shows these two BCs as core because we believe Farmacy Food's
 main business challenge is of a logistics nature.
 
+
 ## Element Catalog 
 
-#### Bounded Context and Subdomain
+### Internal Subdomains and BCs
 
-- The BCs can be seen as the logical grouping of the microservices and components portrayed in other views.
-As stated, the BCs in our map also depict subdomains.
+##### Meal Catalog
+- Manages the catalog of meals that Farmacy Food offers, with information about ingredients, nutrition facts, price, and more.
+- It's a supporting domain BC.
 
-    ![Bounded context closer look](../images/ddd-context-map-bc-inventory-close.png)
+##### Inventory
+- Controls what meals are available in each smart fridge and vendlor location.
+- It's a core domain BC.
 
-- We designated two BCs as **_core_** (Inventory, Order) and one as **_generic_** (Customer Notification). The
- remaining are classified as **_supporting_** BCs.
+![Bounded context closer look](../images/ddd-context-map-bc-inventory-close.png)
 
-- The identified BCs are:
-    - **Meal Catalog**
-        - Manages the catalog of meals that Farmacy Food offers, with information about ingredients, nutrition facts, price, and more.
-    - **Inventory** (core)
-        - Controls what meals are available in each smart fridge and vendlor location.
-    - **_User_**
-        - Mainly handles user profile information. For customers, that includes dietary and health information.
-    - **_Review_**
-        - Manages meal reviews and ratings; surveys.
-    - **_Order_** (core)
-        - Processes orders, keeping track of the global status of all transactions.
-    - **_Cart_**
-        - Handles the shopping cart and checkout process for purchases made using the Farmacy Food app.
-    - **_Subscription_**
-        - Manages plans available and ongoing customer subscriptions.
-    - **_Payment_**
-        - Processes the payment for orders placed on the app and subscription-originated purchases.
-    - **_Promotion_**
-        - Manages promotions and coupons.
-    - **_Location_**
-        - Has the listing of pick-up locations available, and provides the customer with the ability to find a location.         
-    - **_Replenish_**
-        - Updates the status of smart fridges and vendor kiosks when a Farmacy Food employee replenishes these locations.
-    - **_Customer Notification_** (generic)
-        - Notifies the customer of updates on their orders, subscriptions, payments, etc.
+##### User
+- Mainly handles user profile information. For customers, that includes dietary and health information.
+- It's a supporting domain BC.
 
-#### Subdomain
+##### Review
+- Manages meal reviews and ratings; surveys.
+- It's a supporting domain BC.
 
-- In our map, only external systems form subdomains that are not also BCs.
+##### Order
+- Processes orders, keeping track of the global status of all transactions.
+- It's a core domain BC.
 
-    ![Subdomain closer look](../images/ddd-context-map-subdomain.png)
+##### Cart
+- Handles the shopping cart and checkout process for purchases made using the Farmacy Food app.
+- It's a supporting domain BC.
 
-- The cataloged subdomains are:
-    - **_Payment Gateway_**
-        - External partner that handles customer payments.
-    - **_Smartfridge_**
-        - Cloud management system for Smartfridges.
-    - **_Vendor Kiosk_**
-        - Cloud management system for Vendor Kiosks.
-    - **_Central Kitchen_**
-        - Farmacy Food central kitchen management system.
-    - **_Geolocation_**
-        - Maps and location finding services.
-    - **_Identity_**
-        - Authentication using third-party identitiy, such as Google or Facebook. 
-    - **_eDietitian_**
-        - Expert system that would generate meal recommendations based on user preferences, health info, and history.
+##### Subscription
+- Manages plans available and ongoing customer subscriptions.
+- It's a supporting domain BC.
+
+##### Payment
+- Processes the payment for orders placed on the app and subscription-originated purchases.
+- It's a supporting domain BC.
+
+##### Promotion
+- Manages promotions and coupons.
+- It's a supporting domain BC.
+
+##### Location
+- Has the listing of pick-up locations available, and provides the customer with the ability to find a location.         
+- It's a supporting domain BC.
+
+##### Replenish
+- Updates the status of smart fridges and vendor kiosks when a Farmacy Food employee replenishes these locations.
+- It's a supporting domain BC.
+
+##### Customer Notification
+- Notifies the customer of updates on their orders, subscriptions, payments, etc.
+- It's a generic subdomain BC.
+
+
+#### Subdomains from external systems
+
+##### Payment Gateway
+- External partner that handles customer payments.
+        
+##### Smartfridge
+- Cloud management system for Smartfridges.
+
+##### Vendor Kiosk
+- Cloud management system for Vendor Kiosks.
+
+##### Central Kitchen
+- Farmacy Food central kitchen management system.
+
+##### Geolocation
+- Maps and location finding services.
+
+##### Identity
+- Authentication using third-party identitiy, such as Google or Facebook.
+         
+##### eDietitian
+- Expert system that would generate meal recommendations based on user preferences, health info, and history.
 
 
 #### Partnership (BC Relationship)

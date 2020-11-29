@@ -44,17 +44,17 @@ As stated, the BCs in our map also depict subdomains.
     - **_User_**
         - Mainly handles the customer information, such as profile and dietary/health information.
     - **_Review_**
-        - Meals reviews and ratings; Surveys
+        - Meals reviews and ratings; surveys.
     - **_Order_** (core)
         - Processes orders, keeping track of the global status of all transactions.
     - **_Cart_**
         - Handles the checkout process for single purchases.
     - **_Subscription_**
-        - Available and ongoing subscription plans
+        - Available and ongoing subscription plans.
     - **_Payment_**
-        - Processes the payment for single and subscription-based purchases.
+        - Processes the payment for single and subscription-originated purchases.
     - **_Promotion_**
-        - Promotions and coupons
+        - Promotions and coupons.
     - **_Location_**
         - Geographical location of the elements relevant to the business.
     - **_Replenish_**

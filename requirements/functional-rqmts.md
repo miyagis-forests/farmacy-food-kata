@@ -1,4 +1,5 @@
-This document contains the details of what we identified as functional requirements for the Farmacy Food system. In the sections below, you will find the recognized _actors_ and how they are able to interact with the system in major scenarios.
+This document contains the functional requirements we elicited for the Farmacy Food system, based on the first Kata session and 
+the documents provided to all teams. You will find the _actors_ we identified, and how they interact with the system in major scenarios.
 
 # ***Actors***
 - Customer

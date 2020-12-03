@@ -127,8 +127,7 @@ to be generic, some off-the-shelf tool would likely provide the means of integra
 #### Anticorruption Layer - ACL (BC Relationship)
 &nbsp; &nbsp; &nbsp; ![ACL Relationship closer look](../images/ddd-context-map-relationship-acl.png)
 - An anticorruption layer is used to translate the _upstream_ (**`U`**) model to and from the terms (ubiquitous language)
-of the _downstream_ (**`D`**) model. Its goal is to avoid undesirable coupling in the BC implementation toward  
-the external model.
+of the _downstream_ (**`D`**) model. Its goal is to avoid undesirable coupling in the BC implementation toward the external model.
 
 #### Types of Integration Mechanisms between BCs
 

@@ -96,6 +96,7 @@ The justification is in the [README file of the ADR template repo](https://githu
 --------------------------
 
 ### Backlog
+
 Pending design activities for a hypothetical future sprint. :^)
 - Better record the quality attribute requirements (aka non-functional requirements). Requires talking to Kwaku and 
 other Farmacy Food stakeholders.  

@@ -1,8 +1,16 @@
-This is the github repo for the solution created by team Miyagi's Little Forests for the O'Reilly Architecture Kata. It contains a proposed architecture for [Farmacy Food](https://www.farmacyfood.com/).
+This is the github repo for the solution created by team Miyagi's Little Forests for the 2020 O'Reilly Architectural Kata. It contains a proposed architecture for [Farmacy Food](https://www.farmacyfood.com/).
 
 Team contact: [miyagisforests@gmail.com](mailto:miyagisforests@gmail.com)
 
-Five-minute video presentation: _coming soon_ 
+Team members:
+- Antônio Carvalho
+- Eldon Coutinho
+- Paulo Merson
+
+The three of us are developers in the IT department of the [Brazilian Federal Court of Accounts](https://portal.tcu.gov.br/en_us/english/inside-tcu/external-control/) 
+(TCU). We help design and implement service-based solutions at TCU (from our homes in Brasília these days). 
+
+Here's our [five-minute video presentation](https://www.youtube.com/watch?v=11cTCAlidE8) for the O'Reilly Architectural Kata. 
 
 # Farmacy Food system
 

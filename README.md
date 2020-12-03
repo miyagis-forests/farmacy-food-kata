@@ -92,6 +92,7 @@ The linked ADRs below record the main architecture decisions regarding the propo
 different from the template presented by Neal during the first Kata session. 
 The justification is in the [README file of the ADR template repo](https://github.com/pmerson/ADR-template/blob/master/README.md#why-this-template).</sub>
 
+
 --------------------------
 
 ### Backlog
@@ -112,6 +113,7 @@ other Farmacy Food stakeholders.
 --------------------------
 
 ## *About the team Name*
+
 *Miyagi's Little Forests is certainly an unusual name for a dev team. The name has both a pop culture and an academic reference:* 
 - Mr. Miyagi is the shy Karate master in the 1984 "The Karate Kid" film. In the movie, which inspired a generation of then teenagers including 
 the members of this team, Mr. Miyagi teaches the young Daniel-san the ancient art of Karate. The teaching of this martial art is anchored on Katas. 

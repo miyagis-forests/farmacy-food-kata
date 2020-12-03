@@ -13,7 +13,7 @@ low (e.g., less than 3 person-days).
 
 ## *Interoperability with vendor POS system* 
 - The cost to adapt the Farmacy Food system to interact with the POS system of a given vendor (coffee shop, grocery 
-store, etc.) should be low (e.g., less than 3 person-days)
+store, etc.) should be low (e.g., less than 3 person-days).
 - The system must be able to interact with multiple vendor POS systems. 
 
 ## *Scalability (elasticity)*

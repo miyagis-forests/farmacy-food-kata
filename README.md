@@ -17,6 +17,8 @@ Here's our [five-minute video presentation](https://www.youtube.com/watch?v=11cT
 [![miro board](https://miro.com/static/favicons/apple-touch-icon-57x57.png)](https://miro.com/welcomeonboard/L3HbNmvEEfq2TEDaqee9xYJsYeqLm2XCxJMAG5hFZKNZkAVcBroNgxZvDVbRchCH)
 Check out our [Miro Board containing all the diagrams below](https://miro.com/welcomeonboard/L3HbNmvEEfq2TEDaqee9xYJsYeqLm2XCxJMAG5hFZKNZkAVcBroNgxZvDVbRchCH).
 
+***Questions? Comments?*** Awesome! Please feel free to [create an issue](https://github.com/miyagis-forests/farmacy-food-kata/issues/new) and let's discuss!
+
 ### Requirements
 
 This section brings the requirements (some from the [provided document](https://docs.google.com/document/d/1SML3n4JbpZV2PSLRpjaCvBvyUMVsFwlqAQF3VKd_oPU/edit#), 

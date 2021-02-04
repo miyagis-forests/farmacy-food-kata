@@ -25,8 +25,8 @@ Check out our [Miro Board containing all the diagrams below](https://miro.com/we
 
 ### Requirements
 
-This section brings the requirements (some from the [provided document](https://docs.google.com/document/d/1SML3n4JbpZV2PSLRpjaCvBvyUMVsFwlqAQF3VKd_oPU/edit#), 
-some from assumptions we made) that served as drivers for the design decisions in this proposal. 
+This section contains the requirements, distilled from the [provided document](https://docs.google.com/document/d/1SML3n4JbpZV2PSLRpjaCvBvyUMVsFwlqAQF3VKd_oPU/edit#) and  
+the interview with the PO, Kwaku Osei, but also with some assumptions we made. These requirements were the main drivers for the design decisions in this proposal. 
 
 - [Functional requirements](requirements/functional-rqmts.md)
 - [Quality attribute requirements](requirements/quality-attribute-rqmts.md), aka architecture characteristics
@@ -81,7 +81,7 @@ It shows how the Farmacy Food system is broken up into bounded contexts (BCs) an
         <img src="images/ddd-context-map.png" width="200"></a>
     </td>
     <td align="center"><a href="architecture/ddd-context-map-to-microservices.md">DDD Context Map to microservices mapping<br>
-        <img src="images/context-map-to-microservices-mapping.png" width="200"></a>
+        <img src="images/context-map-to-microservices-mapping.jpg" width="200"></a>
     </td>
 </tr>
 </table>

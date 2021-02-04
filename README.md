@@ -17,7 +17,7 @@ Here's our [five-minute video presentation](https://www.youtube.com/watch?v=11cT
 [![miro board](https://miro.com/static/favicons/apple-touch-icon-57x57.png)](https://miro.com/welcomeonboard/L3HbNmvEEfq2TEDaqee9xYJsYeqLm2XCxJMAG5hFZKNZkAVcBroNgxZvDVbRchCH)
 Check out our [Miro Board containing all the diagrams below](https://miro.com/welcomeonboard/L3HbNmvEEfq2TEDaqee9xYJsYeqLm2XCxJMAG5hFZKNZkAVcBroNgxZvDVbRchCH). You can also comment on it.
 
-***Questions? Comments?*** Awesome! Please feel free to [create an issue](https://github.com/miyagis-forests/farmacy-food-kata/issues/new) and let's discuss it!
+***Questions? Comments?*** Interested in microservices? EDA? DDD? Architecture in general? Feel free to [chime in](https://github.com/miyagis-forests/farmacy-food-kata/discussions)!
 
 ---
 

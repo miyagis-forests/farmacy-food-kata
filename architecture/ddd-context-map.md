@@ -36,6 +36,8 @@ main business challenge is of a logistics nature.
 - Manages the catalog of meals that Farmacy Food offers, with information about ingredients, nutrition facts, price, and more.
 - It's a supporting domain BC.
 
+&nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-meal-catalog-close.png)
+
 ##### Inventory
 - Controls what meals are available in each smart fridge and vendlor location.
 - It's a core domain BC.
@@ -46,41 +48,61 @@ main business challenge is of a logistics nature.
 - Mainly handles user profile information. For customers, that includes dietary and health information.
 - It's a supporting domain BC.
 
+&nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-user-close.png)
+
 ##### Review
 - Manages meal reviews and ratings; surveys.
 - It's a supporting domain BC.
+
+&nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-review-close.png)
 
 ##### Order
 - Processes orders, keeping track of the global status of all transactions.
 - It's a core domain BC.
 
+&nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-order-close.png)
+
 ##### Cart
 - Handles the shopping cart and checkout process for purchases made using the Farmacy Food app.
 - It's a supporting domain BC.
+
+&nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-cart-close.png)
 
 ##### Subscription
 - Manages plans available and ongoing customer subscriptions.
 - It's a supporting domain BC.
 
+&nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-subscription-close.png)
+
 ##### Payment
 - Processes the payment for orders placed on the app and subscription-originated purchases.
 - It's a supporting domain BC.
+
+&nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-payment-close.png)
 
 ##### Promotion
 - Manages promotions and coupons.
 - It's a supporting domain BC.
 
+&nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-promotion-close.png)
+
 ##### Location
 - Has the listing of pick-up locations available, and provides the customer with the ability to find a location.         
 - It's a supporting domain BC.
+
+&nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-location-close.png)
 
 ##### Replenish
 - Updates the status of smart fridges and vendor kiosks when a Farmacy Food employee replenishes these locations.
 - It's a supporting domain BC.
 
+&nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-replenish-close.png)
+
 ##### Customer Notification
 - Notifies the customer of updates on their orders, subscriptions, payments, etc.
 - It's a generic subdomain BC.
+
+&nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-customer-notification-close.png)
 
 
 #### Subdomains from external systems

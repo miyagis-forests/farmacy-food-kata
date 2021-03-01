@@ -14,8 +14,8 @@ Here's our [five-minute video presentation](https://www.youtube.com/watch?v=11cT
 
 ---
 
-[![miro board](https://miro.com/static/favicons/apple-touch-icon-57x57.png)](https://miro.com/welcomeonboard/L3HbNmvEEfq2TEDaqee9xYJsYeqLm2XCxJMAG5hFZKNZkAVcBroNgxZvDVbRchCH)
-Check out our [Miro Board containing all the diagrams below](https://miro.com/welcomeonboard/L3HbNmvEEfq2TEDaqee9xYJsYeqLm2XCxJMAG5hFZKNZkAVcBroNgxZvDVbRchCH). You can also comment on it.
+[![miro board](https://miro.com/static/favicons/apple-touch-icon-57x57.png)][miro-board-link]
+Check out our [Miro Board containing all the diagrams below][miro-board-link]. You can also comment on it.
 
 ***Questions? Comments?*** Interested in microservices? EDA? DDD? Architecture in general? Feel free to [chime in](https://github.com/miyagis-forests/farmacy-food-kata/discussions)!
 
@@ -152,3 +152,5 @@ have used the ability to see the forest and not only the trees as a metaphor for
 homage to the movie and embracing the architecture metaphor, we are team **Miyagi's Little Forests**. 
 
 ![Miyagi and Daniel-san](images/Miyagi-and-Daniel-san.jpg)
+
+  [miro-board-link]: https://miro.com/welcomeonboard/L3HbNmvEEfq2TEDaqee9xYJsYeqLm2XCxJMAG5hFZKNZkAVcBroNgxZvDVbRchCH

@@ -16,7 +16,7 @@ have the people and money needed to install and manage physical server machines 
 web server, container orchestration platform, relational database, NoSQL database, and pub-sub message broker. This
 needed technology diversity increases TCO. Using managed services in the cloud alleviates the burden. For example: 
 using Kafka on premises requires configuring a cluster of ZooKeeper and Kafka servers, with tons of configuration options. 
-It is much easier (for the IT team) to use a managed cloud service, such as AWS SNS or Kinesis.
+It is much easier (for the IT team) to use a managed cloud service, such as AWS MSK or Kinesis.
 - On premises infrastructure do not give the elasticity (horizontal scalability) [required by Farmacy Food](../requirements/quality-attribute-rqmts.md).
 (Twenty years ago, if your website/service went "viral" you would run to Radio Shack to buy more CPUs and call your ISP 
 to increase the link bandwidth. Today, we simply deploy the solution in the cloud.) 

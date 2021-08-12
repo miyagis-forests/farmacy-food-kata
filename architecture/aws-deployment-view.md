@@ -56,13 +56,13 @@ For example, the **Inventory Query View** database seen below will be configured
 
 ![AWS deployment view](../images/inventory-query-view-db-symbol.png)    
 
-#### SNS
-- The [Amazon Simple Notification Service](https://aws.amazon.com/sns/features/) (SNS) is a fully-managed message broker 
-service that supports publish-subscribe channels (called topics).
+#### Kafka (AWS MSK)
+- The [Amazon managed Kafka service](https://aws.amazon.com/msk/) (MSK) is a fully-managed Kafka broker cluster that 
+  supports publish-subscribe channels (called topics).
 - Components that send messages (producers aka publishers) and receive messages (consumers aka subcribers) can be 
 implemented using various languages and frameworks. For example, we can use the [spring cloud AWS](https://www.baeldung.com/spring-cloud-aws-messaging
 framework.  
-- The various SNS topics seen in the EDA architecture views shall be configured in SNS. 
+- The various topics seen in the EDA architecture views shall be configured in the MSK cluster with minimum replication factor of 3.  
 
 ![AWS deployment view](../images/topic-symbol.png)
  

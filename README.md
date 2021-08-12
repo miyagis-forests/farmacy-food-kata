@@ -52,12 +52,12 @@ architecture styles.
 <tr>
     <td align="center"><a href="architecture/user-account-mgmt-microservice-view.md">User Account Management - microservice view<br><img src="images/user-account-mgmt-microservice-view-primary.jpg" width="200"></a></td>
     <td align="center"><a href="architecture/catalog-microservice-view.md">Catalog - microservice view<br>
-        <img src="images/catalog-microservice-view-primary.png" width="200"></a>
+        <img src="images/catalog-microservice-view-primary.jpg" width="200"></a>
     </td>
 </tr>
 <tr>
     <td align="center"><a href="architecture/order-microservice-eda-view.md">Order - microservice and EDA view<br>
-        <img src="images/order-microservice-eda-view-primary.png" width="200"><img src="images/order-microservice-eda-view-sd.png" width="200"></a>
+        <img src="images/order-microservice-eda-view-primary.jpg" width="200"><img src="images/order-microservice-eda-view-sd.png" width="200"></a>
     </td>
     <td align="center" valign="middle"><a href="architecture/customer-pickup-microservice-eda-view.md">Customer at pick-up location - microservice and EDA view<br>
         <img src="images/customer-pickup-microservice-view-primary.png" width="200"><img src="images/activity-diagram-for-customer-at-pick-up-location.png" width="200"></a>
@@ -78,7 +78,7 @@ It shows how the Farmacy Food system is broken up into bounded contexts (BCs) an
 <table>
 <tr>
     <td align="center"><a href="architecture/ddd-context-map.md">DDD Context Map<br>
-        <img src="images/ddd-context-map.png" width="200"></a>
+        <img src="images/ddd-context-map.jpg" width="200"></a>
     </td>
     <td align="center"><a href="architecture/ddd-context-map-to-microservices.md">DDD Context Map to microservices mapping<br>
         <img src="images/context-map-to-microservices-mapping.jpg" width="200"></a>
@@ -90,14 +90,16 @@ We believe the implementation of each BC can follow the [hexagonal architecture]
 The following architecture describes how the code of each BC can be structured according to this architecture style.  
  
 <table>
-<tr><td align="center"><a href="architecture/hexagonal-reference-architecture.md">Hexagonal reference architeture view<br><img src="images/hexagonal-reference-architecture.png" width="200"></a></td></tr>
+<tr><td align="center"><a href="architecture/hexagonal-reference-architecture.md">Hexagonal reference architeture view<br>
+<img src="images/hexagonal-reference-architecture.png" width="200"></a></td></tr>
 </table>
 
 Finally, we have a deployment view that describes the runtime infrastructure for the components seen in the five 
 runtime architecture views.    
 
 <table>
-<tr><td align="center"><a href="architecture/aws-deployment-view.md">AWS deployment view<br><img src="images/aws-deployment-view-primary.png" width="200"></a></td></tr>
+<tr><td align="center"><a href="architecture/aws-deployment-view.md">AWS deployment view<br>
+<img src="images/aws-deployment-view-primary.jpg" width="200"></a></td></tr>
 </table>
 
 

@@ -5,9 +5,9 @@
 This architecture view is a [DDD Context Map](https://learning.oreilly.com/library/view/patterns-principles-and/9781118714706/c07.xhtml). 
 It shows how the Farmacy Food system is broken up into bounded contexts (BCs) and how they interact with each other. 
 
-![DDD Context Map](../images/ddd-context-map.png)
+![DDD Context Map](../images/ddd-context-map.jpg)
 
-![DDD Context Map](../images/ddd-context-map-key.png)
+![DDD Context Map](../images/ddd-context-map-key.jpg)
 
 
 _Subdomains_ reflect and divide the areas of business that are of importance to our system. 

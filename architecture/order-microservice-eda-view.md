@@ -11,7 +11,7 @@ processing an order. Key patterns used:
 - CQRS
 - Publish-subscribe (in the event-driven architecture) 
 
-![Order runtime view](../images/order-microservice-eda-view-primary.png)
+![Order runtime view](../images/order-microservice-eda-view-primary.jpg)
 ![Notation key](../images/notation-key-microservice-views.png)
 
 
@@ -84,7 +84,7 @@ from the [catalog](catalog-microservice-view.md).
 be picked up at a smart fridge location. 
 * The diagram uses the UML Sequence Diagram notation, except that we used our component symbols up on top instead of
 UML objects.   
-![Order Sequence Diagram](../images/order-microservice-eda-view-sd.png)
+![Order Sequence Diagram](../images/order-microservice-eda-view-sd.jpg)
 
  
 ## Related ADRs 

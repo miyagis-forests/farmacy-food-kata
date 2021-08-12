@@ -50,7 +50,7 @@ architecture styles.
 
 <table>
 <tr>
-    <td align="center"><a href="architecture/user-account-mgmt-microservice-view.md">User Account Management - microservice view<br><img src="images/user-account-mgmt-microservice-view-primary.png" width="200"></a></td>
+    <td align="center"><a href="architecture/user-account-mgmt-microservice-view.md">User Account Management - microservice view<br><img src="images/user-account-mgmt-microservice-view-primary.jpg" width="200"></a></td>
     <td align="center"><a href="architecture/catalog-microservice-view.md">Catalog - microservice view<br>
         <img src="images/catalog-microservice-view-primary.png" width="200"></a>
     </td>
@@ -66,7 +66,7 @@ architecture styles.
 <tr>
     <td colspan="2" align="center">
         <a href="architecture/replenish-microservice-eda-view.md">Replenisher - microservice and EDA view<br>
-        <img src="images/replenish-microservice-eda-view-primary.png" width="200"><img src="images/replenish-microservices-eda-state-machine.png" width="200">
+        <img src="images/replenish-microservice-eda-view-primary.jpg" width="200"><img src="images/replenish-microservices-eda-state-machine.png" width="200">
         </a>
     </td>
 </tr>

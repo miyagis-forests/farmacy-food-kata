@@ -5,7 +5,7 @@ instructions on how to configure a K8S cluster on EKS using docker images in ECR
 - This [AWS doc page](https://docs.aws.amazon.com/eks/latest/userguide/eks-networking.html) describes restrictions and
 guidelines for EKS topology.   
 
-![AWS deployment view](../images/aws-deployment-view-primary.png)
+![AWS deployment view](../images/aws-deployment-view-primary.jpg)
 
 
 ## Element Catalog 
@@ -64,7 +64,7 @@ implemented using various languages and frameworks. For example, we can use the 
 framework.  
 - The various SNS topics seen in the EDA architecture views shall be configured in SNS. 
 
-![AWS deployment view](../images/sns-topic-symbol.png)
+![AWS deployment view](../images/topic-symbol.png)
  
 #### Availability zone A, Availability zone B
 - An [availability zone](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-availability-zones) 

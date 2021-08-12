@@ -9,7 +9,7 @@ This is a microservice architecture. Key patterns used:
 - Database per Microservice (aka Database per Service)
 - CQRS 
 
-![User account management runtime view](../images/user-account-mgmt-microservice-view-primary.png)
+![User account management runtime view](../images/user-account-mgmt-microservice-view-primary.jpg)
 ![Notation key](../images/notation-key-microservice-views.png)
 
 ## Element Catalog 

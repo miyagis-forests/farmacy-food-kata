@@ -7,7 +7,7 @@ This is a microservice architecture. Key patterns used:
 - Database per Microservice (aka Database per Service)
 - CQRS 
 
-![Replenisher microservice and eda view](../images/replenish-microservice-eda-view-primary.png)
+![Replenisher microservice and eda view](../images/replenish-microservice-eda-view-primary.jpg)
 ![Notation key](../images/notation-key-microservice-views.png)
 
 

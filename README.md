@@ -39,7 +39,8 @@ As a starting point, there's a context diagram that gives an overview of the ext
 what we called the *Farmacy Food System*, which is the scope of this software architecture.
 
 <table>
-<tr><td align="center"><a href="architecture/context-diagram.md">Context Diagram<br><img src="images/context-diagram.png" width="200"></a></td></tr>
+<tr><td align="center"><a href="architecture/context-diagram.md">Context Diagram<br>
+<img src="images/context-diagram.jpg" width="200"></a></td></tr>
 </table>
 
 The main part of the software architecture is the set of five *architecture views* seen below. These views provide a runtime 

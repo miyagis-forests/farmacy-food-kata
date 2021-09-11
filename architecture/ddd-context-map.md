@@ -187,6 +187,7 @@ we have also specified in the diagram the technical mechanisms used to integrate
 -->
 
 ## Related Views
+- [DDD Context Map to microservices mapping](ddd-context-map-to-microservices.md)
 - [Context Diagram](context-diagram.md)
 - [Hexagonal reference architeture view](hexagonal-reference-architecture.md)
 - [User Account Management - microservice view](user-account-mgmt-microservice-view.md)

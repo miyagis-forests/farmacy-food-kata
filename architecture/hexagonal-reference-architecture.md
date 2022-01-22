@@ -1,16 +1,24 @@
-# Hexagonal Reference Architecture View 
+# Hexagonal Reference Architecture for a BC 
 This view describes the [hexagonal reference architecture](https://alistair.cockburn.us/hexagonal-architecture/) for a typical 
 bounded context (BC) in the Farmacy Food system. The diagram shows the interaction between external components and the 
 Farmacy Food BC via *adapters*. This hexagonal architecture prescribes that technology-specific logic be 
 placed in adapters, which isolate the application and domain layers. 
 
 The execution of an *inbound adapter* is activated by an external element. These adapters typically call logic that
-is not technology specific and resides in the "Application + Domain" layer in the center. 
+is not technology specific and resides in the Application and Domain layers in the center. 
 
 *Outbound adapters* are used by the application to interact with other external elements: reading or writing to/from 
-databases), calling http services, publishing events to a message broker topic.   
+databases), calling http services, publishing events to a message broker topic.
 
-![Replenish runtime view](../images/hexagonal-reference-architecture.png)
+The hexagons are layers and hence the hexagonal architecture is a layered architecture. In our hexagonal architecture, 
+the constraint is that *modules in an outer layer can use modules in any inner layer*. There's one exception: modules in the
+application layer can use outbound adapter modules (via interfaces and dependency inversion to avoid platform-specific
+dependencies in the application layer). 
+
+
+![Hexagonal architecture reference view](../images/hexagonal-reference-architecture.jpg)
+![Notation key](../images/hexagonal-notation-key.jpg)
+
 
 ## Element Catalog 
 

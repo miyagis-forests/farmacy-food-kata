@@ -92,7 +92,7 @@ The following architecture describes how the code of each BC can be structured a
  
 <table>
 <tr><td align="center"><a href="architecture/hexagonal-reference-architecture.md">Hexagonal reference architeture view<br>
-<img src="images/hexagonal-reference-architecture.png" width="200"></a></td></tr>
+<img src="images/hexagonal-reference-architecture.jpg" width="200"></a></td></tr>
 </table>
 
 Finally, we have a deployment view that describes the runtime infrastructure for the components seen in the five 

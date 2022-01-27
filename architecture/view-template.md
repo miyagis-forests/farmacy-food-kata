@@ -4,7 +4,7 @@ Short description of the scope and nature of this architecture view.
 ![Alt text - name of the view](../images/diagram-filename.png)
 
 ## Element Catalog 
-(There's no need to list *all* elements in the diagram, just the ones who require further information. Give the 
+(There's no need to list *all* elements in the diagram, just the ones that require further information. Give the 
  information in a bulleted list for improved readability.)
 
 #### Element X

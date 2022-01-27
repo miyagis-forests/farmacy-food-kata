@@ -80,6 +80,8 @@ a [virtual private cloud](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_S
 - Although RDS and ES can be configured outside your VPC, we have them in private "db" subnets in the diagram as a 
 measure to protect them from unauthorized access.  
  
+## Behavior
+N/A
  
 ## Related ADRs 
 - [AWS as the cloud provider](../ADRs/ADR006-aws-as-cloud-provider.md)

@@ -103,7 +103,7 @@ runtime architecture views.
 <img src="images/aws-deployment-view-primary.jpg" width="200"></a></td></tr>
 </table>
 
-
+Our architecture views were documented following a lightweight [view template available here](https://github.com/pmerson/architecture-view-template). 
 ### ADRs
 
 The linked ADRs below record the main architecture decisions regarding the proposed design, including their context and rationale.

@@ -118,4 +118,4 @@ the documents provided to all teams. You will find the _actors_ we identified, a
 <p><sup>1</sup> Native mobile app or web app.</p>
 <p><sup>2</sup> Farmacy Food representative responsible for replenishing the stock of meals in smart fridges and vendor kiosks.</p>
 <p><sup>3</sup> Operations correspond to API endpoints that we expect to see in the Smart Fridge cloud-based system.</p>
-<p><sup>4</sup> Credit or debit card, or order confirmation code to be presented at the smart fridge for pick up.</p>
+<p><sup>4</sup> Credit or debit card, or order confirmation code to be presented at the smart fridge for pickup.</p>

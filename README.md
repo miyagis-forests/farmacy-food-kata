@@ -1,4 +1,4 @@
-This is the github repo for the solution created by team Miyagi's Little Forests for the 2020 O'Reilly Architectural Kata. It contains a proposed architecture for [Farmacy Food](https://www.farmacyfood.com/).
+This is the GitHub repo for the solution created by team Miyagi's Little Forests for the 2020 O'Reilly Architectural Kata. It contains a proposed architecture for [Farmacy Food](https://www.farmacyfood.com/).
 
 Team contact: [miyagisforests@gmail.com](mailto:miyagisforests@gmail.com)
 
@@ -91,7 +91,7 @@ We believe the implementation of each BC can follow the [hexagonal architecture]
 The following architecture describes how the code of each BC can be structured according to this architecture style.  
  
 <table>
-<tr><td align="center"><a href="architecture/hexagonal-reference-architecture.md">Hexagonal reference architeture view<br>
+<tr><td align="center"><a href="architecture/hexagonal-reference-architecture.md">Hexagonal reference architecture view<br>
 <img src="images/hexagonal-reference-architecture.jpg" width="200"></a></td></tr>
 </table>
 

@@ -1,9 +1,9 @@
 # ADR 001: Use the microservice architecture style with containerization
-Farmacy Food is a start up company and does not have a sizeable team of experienced developers available. The overarching
+Farmacy Food is a start-up company and does not have a sizeable team of experienced developers available. The overarching
 architecture style for the Farmacy Food system should be simple, easy to create, maintain and **evolve**. Finding 
 developers that can create and evolve the system, as well as tools and frameworks that support the system should not
 require heaps of money. In other words, Farmacy Food is not in a position to be an *early adopter*, and should hence adopt an established architecture style
-that suppors evolution.      
+that supports evolution.      
 
 ## Decision 
 We will use the microservice architecture style for backend services in the Farmacy Food system. 
@@ -37,9 +37,9 @@ would work just as well for the Farmacy Food system. It has the nice benefit of 
 units called domain services, which are simpler to design and reduce the burden of packaging, deploying and overseeing 
 to a reasonably small number of units. We chose microservice over service-based for two main reasons:
   - Microservices are more suitable to containerization and hence cloud-deployment.
-  - We try to mimic the service-based style maintainability benefit at the development artifacts level via the heaxagonal architecture.
+  - We try to mimic the service-based style maintainability benefit at the development artifacts level via the hexagonal architecture.
   For example, a single git project that corresponds to a hexagonal architecture can yield a few microservices (i.e., docker 
-  images, our deploymet units). We then handle the increased burden of managing more fine grained *runtime* units 
+  images, our deployment units). We then handle the increased burden of managing more fine-grained *runtime* units 
   via **extensive automation**.  
 
 ## Status
@@ -56,9 +56,9 @@ microservice development. Although it's a startup, Farmacy Food should try to de
 a basic reference architecture (with room for evolution). "Governance" is an abominable word, especially for startups. 
 But what we're suggesting can be as simple as:
   - Have a clear representation of the reference architecture (we have a good start in our [hex architecture](../architecture/hexagonal-reference-architecture.md),
-  and [deployment architecture](../architecture/aws-deployment-architecture.md)). 
+  and [deployment architecture](../architecture/aws-deployment-view.md)). 
   - Make sure all devs know about and understand the reference architecture.
-  - Create a space (e.g., a slack channel) for occasionally discussing changes and evolution of the reference architecture. 
+  - Create a space (e.g., a Slack channel) for occasionally discussing changes and evolution of the reference architecture. 
   Later on, when Farmacy Food becomes a larger enterprise, it could be done in an "architecture guild".   
 - Farmacy Food needs a team of developers familiar with microservice development, [microservice patterns](https://microservices.io/),
  as well as with tools and frameworks, such as: 

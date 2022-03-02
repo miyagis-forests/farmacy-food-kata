@@ -39,7 +39,7 @@ main business challenge is of a logistics nature.
 &nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-meal-catalog-close.png)
 
 ##### Inventory
-- Controls what meals are available in each smart fridge and vendlor location.
+- Controls what meals are available in each smart fridge and vendor location.
 - It's a core domain BC.
 
 &nbsp; &nbsp; &nbsp; ![Bounded context closer look](../images/ddd-context-map-bc-inventory-close.png)
@@ -123,7 +123,7 @@ main business challenge is of a logistics nature.
 - Maps and location finding services.
 
 ##### Identity
-- Authentication using third-party identitiy, such as Google or Facebook.
+- Authentication using third-party identity, such as Google or Facebook.
          
 ##### eDietitian
 - Expert system that would generate meal recommendations based on user preferences, health info, and history.
@@ -142,9 +142,9 @@ relationships between the designed BCs as partnerships.
 model is accepted/absorbed without translation by the _downstream_ (**`D`**) counterpart.
 - In our model, this relationship is used in three scenarios. The integration with the _Identity_
 subdomain, mostly because the solutions in this subdomain, e.g. OAuth, are typically widely known and accepted.
-The _eDietitian_ subdomain is expected to require some information to generate their decisions and it our system should 
+The _eDietitian_ subdomain is expected to require some information to generate their decisions and our system should 
 provide that data as needed. Lastly, given the *Customer Notification* BC is expected
-to be generic, some off-the-shelf tool would likely provide the means of integrating with our BCs with minimal effort.
+to be generic, some off-the-shelf tool would likely provide means for integration with our BCs with minimal effort.
 
 #### Anticorruption Layer - ACL (BC Relationship)
 &nbsp; &nbsp; &nbsp; ![ACL Relationship closer look](../images/ddd-context-map-relationship-acl.png)
@@ -189,13 +189,10 @@ we have also specified in the diagram the technical mechanisms used to integrate
 ## Related Views
 - [DDD Context Map to microservices mapping](ddd-context-map-to-microservices.md)
 - [Context Diagram](context-diagram.md)
-- [Hexagonal reference architeture view](hexagonal-reference-architecture.md)
+- [Hexagonal reference architecture view](hexagonal-reference-architecture.md)
 - [User Account Management - microservice view](user-account-mgmt-microservice-view.md)
 - [Catalog - microservice view](catalog-microservice-view.md)
 - [Order - microservice and EDA view](order-microservice-eda-view.md)
 - [Customer at Pick-up Location Microservice and EDA View](customer-pickup-microservice-eda-view.md)
 - [Replenisher - microservice and EDA view](replenish-microservice-eda-view.md)
-
-<!--
 - [AWS Deployment view](aws-deployment-view.md)
---> 

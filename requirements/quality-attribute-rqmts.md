@@ -35,4 +35,4 @@ store, etc.) should be low (e.g., less than 3 person-days).
 - The different versions of the app should provide a user experience that appeals to the target user population. 
 - Using UX design techniques, and providing high levels of customization are goals.
 - The system should keep the user appraised via notifications (email, app push notification, SMS, whatsApp, or other) of 
-steps in fulfilling an order (order placed, payment confirmed, order available for pick up, etc.)
+steps in fulfilling an order (order placed, payment confirmed, order available for pickup, etc.)

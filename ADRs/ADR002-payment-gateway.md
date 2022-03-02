@@ -9,8 +9,8 @@ However, during a transition period, we will use the payment gateway in hosted m
 
 ## Rationale 
 Though a *hosted* payment gateway solution is simpler to roll out, it has some drawbacks:
-- in the case of the Web app, the user is directed to a separate web site to complete the payment (the payment gateway 
-provider web site). The user experience is not seamless thoughout.  
+- in the case of the Web app, the user is directed to a separate website to complete the payment (the payment gateway 
+provider website). The user experience is not seamless throughout.  
 - in the case of the native apps, the user is directed to a separate app.
 - transaction fees tend to be higher than in self-hosted mode.
 - the merchant still needs to be PCI DSS compliant. 

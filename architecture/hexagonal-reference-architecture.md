@@ -8,7 +8,7 @@ The execution of an *inbound adapter* is activated by an external element. These
 is not technology specific and resides in the Application and Domain layers in the center. 
 
 *Outbound adapters* are used by the application to interact with other external elements: reading or writing to/from 
-databases), calling http services, publishing events to a message broker topic.
+databases, calling http services, publishing events to a message broker topic.
 
 The hexagons are layers and hence the hexagonal architecture is a layered architecture. In our hexagonal architecture, 
 the constraint is that *modules in an outer layer can use modules in any inner layer*. There's one exception: modules in the
@@ -26,8 +26,8 @@ dependencies in the application layer).
 - An *inbound* REST adapter exposes http endpoints and handles the requests from outside components.
 - If you create an inbound REST adapter using for example the Spring MVC framework, the REST adapter would typically 
 consist of one or more `@RestController` classes.
-- An *oubbound* REST adapter makes calls to http services. It typically offers an function interface that is called
-by the application and then translates that function call into an http request. 
+- An *outbound* REST adapter makes calls to http services. It typically offers a function interface that is called
+by the application and then translates that function call into a http request. 
 - You can use for example the Open Feign framework to implement an outbound REST adapter.   
 
 #### Application + Domain 
@@ -37,8 +37,8 @@ Transfer Objects) and returned to outside elements.
 
 #### Batch Adapter
 - Executes scheduled tasks typically following a cron table.
-- Typically, these tasks pool components like REST services or datasources. Their purpose can be, for example, syncrhonize 
-data between a master data store and its replicas, or call third-party systems to get updates on activate processing. 
+- Typically, these are tasks pool components like REST services or datasources. Their purpose can be, for example, to synchronize 
+data between a master data store and its replicas, or to call third-party systems to get updates or activate processes. 
 
 ## Behavior
 - N/A.

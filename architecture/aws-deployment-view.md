@@ -59,7 +59,7 @@ For example, the **Inventory Query View** database seen below will be configured
 #### Kafka (AWS MSK)
 - The [Amazon managed Kafka service](https://aws.amazon.com/msk/) (MSK) is a fully-managed Kafka broker cluster that 
   supports publish-subscribe channels (called topics).
-- Components that send messages (producers aka publishers) and receive messages (consumers aka subcribers) can be 
+- Components that send messages (producers aka publishers) and receive messages (consumers aka subscribers) can be 
 implemented using various languages and frameworks. For example, we can use the [spring cloud AWS](https://www.baeldung.com/spring-cloud-aws-messaging)
 framework.  
 - The various topics seen in the EDA architecture views shall be configured in the MSK cluster with minimum replication factor of 3.  
@@ -93,4 +93,4 @@ N/A
 - [Order - microservice and EDA view](order-microservice-eda-view.md)
 - [Catalog - microservice view](catalog-microservice-view.md)
 - [Replenisher - microservice and EDA view](replenish-microservice-eda-view.md) 
-- [Hexagonal reference architeture view](hexagonal-reference-architecture.md) 
+- [Hexagonal reference architecture view](hexagonal-reference-architecture.md) 

@@ -25,13 +25,13 @@ coupon and recalculate the cost based on the discount.
 - When processing the final submit for the meal order, `Checkout` calls `Inventory query` for validating the order against 
   meal availability in the selected pick-up location (if one was chosen). If everything is OK, a domain event "Purchase Order Created" 
   is published. 
-- The purchase order is processed asynchronouly, as described in the [sequence diagram](#behavior) further down. 
+- The purchase order is processed asynchronously, as described in the [sequence diagram](#behavior) further down. 
 
 #### Payment
 - Will process the payment for a submitted purchase order. 
 - Uses a third-party payment gateway. To avoid coupling the logic to one specific payment gateway provider, the interaction
 is through a wrapper service. 
-- If the payment is sucessful, `Payment` publishes a Order Payment Confirmed event containing all order details and
+- If the payment is successful, `Payment` publishes an Order Payment Confirmed event containing all order details and
 payment status.  
 
 #### Payflow wrapper
@@ -53,7 +53,7 @@ payment status.
 - See [catalog in the Customer at Pick-up Location Microservice and EDA View](customer-pickup-microservice-eda-view.md).
 
 #### Customer notification
-- Reponsible for sending out notifications to the customers via one or more mechanisms: 
+- Responsible for sending out notifications to the customers via one or more mechanisms: 
     - email
     - app push notification
     - SMS  

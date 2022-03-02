@@ -24,7 +24,7 @@ This is a microservice architecture. Key patterns used:
 #### Inventory Command
 - Listener to inventory events that correspond to actions taken by the replenisher at the pick-up point. Examples of
 such events include: Meals Added to Fridge, Meals Removed from Fridge, Meals Added to Vendor Kiosk. 
-- It updates stock information in the master inventory DB for vendor kiosks and fridges. 
+- It updates stock information in the primary inventory DB for vendor kiosks and fridges. 
 
 #### Inventory data sync
 - Batch program that in a loop reads data from Inventory, Kiosks and Fridges data sources in order to synchronize data to the Inventory query view. 

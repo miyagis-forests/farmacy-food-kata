@@ -38,7 +38,7 @@ Transfer Objects) and returned to outside elements.
 #### Batch Adapter
 - Executes scheduled tasks typically following a cron table.
 - Typically, these are tasks pool components like REST services or datasources. Their purpose can be, for example, to synchronize 
-data between a master data store and its replicas, or to call third-party systems to get updates or activate processes. 
+data between a primary data store and its replicas, or to call third-party systems to get updates or activate processes. 
 
 ## Behavior
 - N/A.

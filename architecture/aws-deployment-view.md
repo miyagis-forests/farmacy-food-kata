@@ -40,7 +40,7 @@ Farmacy Food will use within AWS to store the several docker images comprising t
 database server to be used, such as  Oracle, PostgreSql, Aurora, but MySQL is eligible for AWS free tier and should 
 reduce the upfront investment to set up and explore an AWS dev environment.)       
 - Should be configured with the multi-AZ deployment option for increased availability.
-- The Farmacy Food System will use RDS with MySQL as the master read-write data store to persist different types of data. 
+- The Farmacy Food System will use RDS with MySQL as the primary read-write data store to persist different types of data. 
 For example, the **Inventory** database seen below will be configured as a set of tables in RDS.
 
 ![AWS deployment view](../images/inventory-db-symbol.png)    

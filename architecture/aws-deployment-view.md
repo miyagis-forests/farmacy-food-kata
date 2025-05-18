@@ -45,14 +45,14 @@ For example, the **Inventory** database seen below will be configured as a set o
 
 ![AWS deployment view](../images/inventory-db-symbol.png)    
 
-#### ElasticSearch
-- The [Elasticsearch service on AWS](https://aws.amazon.com/elasticsearch-service/) (ES) is a fully managed text-based NoSQL 
-database service that the Farmacy Food system will use for query views in different microservices.
-- There will be an ES *domain* for Farmacy Food. This ES domain should use the Farmacy Food VPC to enable automatic
-secure communication between application components (microservices and batch programs) and the ES nodes. 
-- The ES domain should use multi-AZ deployment for increased availability. 
-- The Farmacy Food System will use ES as the *query view* to be accessed by microservices that need to only read data. 
-For example, the **Inventory Query View** database seen below will be configured using ES.
+#### OpenSearch
+- The [OpenSearch service on AWS](https://aws.amazon.com/opensearch-service/) is a fully managed document-based NoSQL 
+database service that the Farmacy Food system will use for query views in different microservices. It stores collections of JSON documents.
+- There will be an OpenSearch *domain* for Farmacy Food. This OpenSearch domain should use the Farmacy Food VPC to enable automatic
+secure communication between application components (microservices and batch programs) and the OpenSearch managed cluster nodes. 
+- The OpenSearch cluster should use multi-AZ deployment for increased availability. 
+- The Farmacy Food System will use OpenSearch as the *query view* to be accessed by microservices that need to only read data. 
+For example, the **Inventory Query View** database seen below will be configured using OpenSearch.
 
 ![AWS deployment view](../images/inventory-query-view-db-symbol.png)    
 
@@ -78,7 +78,7 @@ for improved availability due to automatic failover.
 a [virtual private cloud](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html) (VPC).
 - Public subnets 1 and 2 are visible to the Internet via an AWS internet gateway.
 - Private subnets 1 and 2 are not visible to the Internet. They can be connected to the Farmacy Food corporate LAN (not shown in the diagram). 
-- Although RDS and ES are configured within private subnets as a measure to protect them from unauthorized access.  
+- RDS and OpenSearch are configured within private subnets as a measure to protect them from unauthorized access.  
 
 #### Internet gateway 
 - The [Internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html) is attached to your VPC. Via
